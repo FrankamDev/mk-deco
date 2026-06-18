@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import {motion} from 'framer-motion';
+import { Link } from 'react-router-dom';
 export default function Navbar() {
 const navLinks = [
         { id: 'accueil', name: 'Accueil', href: '/' },
@@ -34,9 +35,11 @@ const [activeLink, setActiveLink] = useState('accueil');
             
           
             <div className="flex flex-col cursor-pointer">
+                <Link to="/">
                 <span className="text-2xl font-serif font-semibold tracking-wide text-stone-900 dark:text-stone-100 uppercase">
                     L'Atelier
                 </span>
+                </Link>
                 <span className="text-[10px] tracking-[0.25em] text-amber-600 dark:text-amber-400 font-light uppercase -mt-1">
                     Haute Coiffure
                 </span>
