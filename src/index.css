@@ -6,3 +6,4 @@
 #FFFFFF */
 
 @variant dark (&:where(.dark, .dark *));
+
