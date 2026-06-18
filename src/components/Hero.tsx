@@ -287,7 +287,7 @@ export default function Hero() {
                         {/* Écran Interne (Image de tresses premium) */}
                         <div className="relative w-full h-full rounded-[30px] sm:rounded-[36px] overflow-hidden bg-stone-800">
                             <img 
-                                src="https://images.unsplash.com/photo-1628157582853-a796fa650a6a?q=80&w=600&auto=format&fit=crop" 
+                                src="../../public/women/1.jpg" 
                                 alt="Tresses d'exception NexaTress" 
                                 className="w-full h-full object-cover object-center pointer-events-none"
                             />

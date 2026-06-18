@@ -2,11 +2,11 @@ import { useState, useEffect } from 'react';
 import {motion} from 'framer-motion';
 export default function Navbar() {
 const navLinks = [
-        { id: 'accueil', name: 'Accueil', href: '#accueil' },
-        { id: 'prestations', name: 'Prestations', href: '#prestations' },
-        { id: 'galerie', name: 'Galerie', href: '#galerie' },
+        { id: 'accueil', name: 'Accueil', href: '/' },
+        { id: 'prestations', name: 'Prestations', href: '/prestations' },
+        { id: 'galerie', name: 'Galerie', href: '/galerie' },
         { id: 'salon', name: 'Le Salon', href: '/salon' },
-        { id: 'contact', name: 'Contact', href: '#contact' }
+        { id: 'contact', name: 'Contact', href: '/contact' }
     ];
 
 const [activeLink, setActiveLink] = useState('accueil');

@@ -1,11 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Footer from "./components/Footer"
-import GalleryExpertise from "./components/GalleryExpertise"
-import Hero from "./components/Hero"
-import Navbar from "./components/Navbar"
-import Services from "./components/Services"
-import SalonShowcase from "./pages/SalonShowcase"
+
 import Home from "./components/Home"
+import SalonShowcase from "./pages/SalonShowcase"
+import Contact from "./pages/Contact"
 
 function App() {
   
@@ -17,6 +14,7 @@ function App() {
 
      <Route element={<SalonShowcase/>} path="/salon" />
      <Route element={<Home/>} path="/" />
+     <Route element={<Contact/>} path="/contact" />
     </Routes>
     
     </BrowserRouter>

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { MapPin, Compass, Scissors, Sparkles } from 'lucide-react';
+import Navbar from '../components/Navbar';
 
 export default function SalonShowcase() {
     // Courbe de Bézier haut de gamme pour les transitions
@@ -14,6 +15,7 @@ export default function SalonShowcase() {
         <section className="relative py-20 md:py-32 bg-white dark:bg-stone-950 transition-colors duration-500 overflow-hidden">
             
             {/* Arrière-plan architectural subtil */}
+            <Navbar />
             <div className="absolute top-0 right-0 w-[30vw] h-full bg-stone-50 dark:bg-stone-900/10 pointer-events-none hidden lg:block" />
             
             <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10">
