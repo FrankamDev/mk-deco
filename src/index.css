@@ -4,3 +4,5 @@
 #111827
 #D4AF37
 #FFFFFF */
+
+@variant dark (&:where(.dark, .dark *));
