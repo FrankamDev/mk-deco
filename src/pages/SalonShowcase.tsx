@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { MapPin, Compass, Scissors, Sparkles } from 'lucide-react';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export default function SalonShowcase() {
     // Courbe de Bézier haut de gamme pour les transitions
@@ -131,6 +132,7 @@ export default function SalonShowcase() {
 
                 </div>
             </div>
+            <Footer />
         </section>
     );
 }

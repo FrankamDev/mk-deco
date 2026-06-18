@@ -4,7 +4,7 @@ export default function Navbar() {
 const navLinks = [
         { id: 'accueil', name: 'Accueil', href: '/' },
         { id: 'prestations', name: 'Prestations', href: '/prestations' },
-        { id: 'galerie', name: 'Galerie', href: '/galerie' },
+        { id: 'galerie', name: 'Galerie', href: '/gallery' },
         { id: 'salon', name: 'Le Salon', href: '/salon' },
         { id: 'contact', name: 'Contact', href: '/contact' }
     ];
