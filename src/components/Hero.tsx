@@ -194,15 +194,14 @@ export default function Hero() {
 
     return (
         <section className="relative min-h-screen pt-24 pb-12 flex items-center justify-center bg-stone-50 dark:bg-stone-950 overflow-hidden transition-colors duration-500">
-            
-            {/* LIGHT DESIGN / GLOW AVANCÉ */}
+           
             <div className="absolute top-20 left-[-10%] w-[50vw] h-[50vw] max-w-[600px] bg-amber-200/20 dark:bg-amber-950/10 rounded-full blur-[120px] pointer-events-none" />
             <div className="absolute bottom-[-10%] right-[-10%] w-[60vw] h-[60vw] max-w-[700px] bg-rose-200/20 dark:bg-stone-900/30 rounded-full blur-[150px] pointer-events-none" />
             <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808007_1px,transparent_1px),linear-gradient(to_bottom,#80808007_1px,transparent_1px)] bg-[size:24px_24px] md:bg-[size:32px_32px] pointer-events-none" />
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
                 
-                {/* --- ZONE TEXTE (Optimisée au millimètre pour mobile) --- */}
+              
                 <motion.div 
                     className="lg:col-span-7 flex flex-col text-center lg:text-left items-center lg:items-start order-2 lg:order-1"
                     initial="hidden"
@@ -218,7 +217,6 @@ export default function Hero() {
                         L'art du tressage haut de gamme
                     </motion.div>
 
-                    {/* Titre Ultra-Responsive */}
                     <motion.h1 
                         variants={fadeInUp}
                         className="text-[32px] sm:text-4xl md:text-5xl lg:text-6xl font-serif font-light tracking-tight text-stone-950 dark:text-stone-50 leading-[1.15] sm:leading-[1.1]"
