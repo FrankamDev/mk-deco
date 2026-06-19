@@ -4,6 +4,7 @@ import Services from './Services'
 import GalleryExpertise from './GalleryExpertise'
 import Footer from './Footer'
 
+
 const Home = () => {
   return (
     <div>
@@ -11,7 +12,7 @@ const Home = () => {
      <Hero/>
      <Services/>
      <GalleryExpertise/>
-     <Footer/>
+     
     </div>
   )
 }

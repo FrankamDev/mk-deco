@@ -149,17 +149,7 @@ type Service = {
 export default function Services() {
   const navigate = useNavigate();
 
-//   const imageVariants: Variants = {
-//     hidden: { opacity: 0, scale: 0.9 },
-//     visible: {
-//       opacity: 1,
-//       scale: 1,
-//       transition: {
-//         duration: 0.6,
-//         ease: [0.25, 0.1, 0.25, 1],
-//       },
-//     },
-//   };
+
 
   const cardVariants: Variants = {
     hidden: { opacity: 0, y: 40 },

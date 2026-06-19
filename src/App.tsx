@@ -5,6 +5,7 @@ import SalonShowcase from "./pages/SalonShowcase"
 import Contact from "./pages/Contact"
 import GalleryExpertise from "./components/GalleryExpertise"
 import ServiceDetail from "./components/ServiceDetail"
+import FloatingChat from "./components/FloatingChat"
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
     </Routes>
     
     </BrowserRouter>
+    <FloatingChat/>
     </>
   )
 }
