@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Clock, Star, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import prestationData from '../prestationData';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 
 
@@ -20,7 +22,7 @@ export default function Services() {
   return (
     <section className="relative py-20 md:py-28 bg-white dark:bg-stone-950 transition-colors duration-500 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
-        
+        <Navbar />
         <div className="text-center mb-16">
           <motion.span 
             initial={{ opacity: 0, y: 20 }}
@@ -115,6 +117,7 @@ export default function Services() {
           </AnimatePresence>
         </div>
       </div>
+      <Footer />
     </section>
   );
 }

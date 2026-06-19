@@ -1,11 +1,10 @@
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Award, Shield, Star } from 'lucide-react';
+import { ArrowLeft, Award, Shield, Star, Clock, Users, Heart } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import prestationData from '../prestationData';
 
-// Interface pour corriger les erreurs TypeScript
 interface Service {
   id: number;
   title: string;
@@ -16,6 +15,8 @@ interface Service {
   duration: string;
   rating: number;
   included?: string[];
+  benefits?: string[];
+  careTips?: string[];
 }
 
 export default function PrestationsDetails() {
@@ -52,26 +53,37 @@ export default function PrestationsDetails() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
             {/* Image */}
             <div className="lg:col-span-7">
-              <div className="relative overflow-hidden shadow-2xl border border-stone-200 dark:border-stone-800">
-                <img src={services.image} alt={services.title} className="w-full h-full object-cover" />
+              <div className="relative overflow-hidden shadow-2xl border border-stone-200 dark:border-stone-800 rounded-3xl">
+                <img 
+                  src={services.image} 
+                  alt={services.title} 
+                  className="w-full h-full object-cover aspect-[4/3]" 
+                />
               </div>
             </div>
 
-            {/* Détails */}
-            <div className="lg:col-span-5 space-y-8">
+            {/* Détails enrichis */}
+            <div className="lg:col-span-5 space-y-10">
               <div>
                 <span className="uppercase text-xs tracking-widest text-amber-600">{services.category}</span>
-                <h1 className="text-4xl font-serif tracking-tight mt-2">{services.title}</h1>
+                <h1 className="text-4xl font-serif tracking-tight mt-2 leading-tight">{services.title}</h1>
               </div>
 
+              {/* Prix + Note + Durée */}
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-1 text-amber-500">
-                  {Array.from({ length: 5 })?.map((_, i) => <Star key={i} className="w-5 h-5 fill-current" />)}
-                  <span className="ml-2 text-lg font-medium text-stone-700 dark:text-stone-300">{services.rating}</span>
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <Star key={i} className="w-5 h-5 fill-current" />
+                  ))}
+                  <span className="ml-2 text-lg font-medium text-stone-700 dark:text-stone-300">
+                    {services.rating}
+                  </span>
                 </div>
                 <div className="text-right">
                   <p className="text-4xl font-serif font-bold text-amber-600">{services.price}</p>
-                  <p className="text-sm text-stone-500">{services.duration}</p>
+                  <p className="text-sm text-stone-500 flex items-center gap-1 justify-end">
+                    <Clock className="w-4 h-4" /> {services.duration}
+                  </p>
                 </div>
               </div>
 
@@ -79,23 +91,62 @@ export default function PrestationsDetails() {
                 {services.description}
               </p>
 
-              <div>
-                <h4 className="uppercase tracking-widest text-xs font-bold mb-4 flex items-center gap-2">
-                  <Award className="w-4 h-4" /> Inclus dans la prestation
-                </h4>
-                <div className="grid grid-cols-1 gap-3">
-                  {services.included?.map((item, index) => (
-                    <div key={index} className="flex items-start gap-3">
-                      <Shield className="w-5 h-5 text-emerald-600 mt-0.5" />
-                      <span className="text-sm">{item}</span>
-                    </div>
-                  ))}
+              {/* Inclus dans la prestation */}
+              {services.included && services.included.length > 0 && (
+                <div>
+                  <h4 className="uppercase tracking-widest text-xs font-bold mb-4 flex items-center gap-2">
+                    <Award className="w-4 h-4" /> Inclus dans la prestation
+                  </h4>
+                  <div className="grid grid-cols-1 gap-3">
+                    {services.included.map((item, index) => (
+                      <div key={index} className="flex items-start gap-3">
+                        <Shield className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                        <span className="text-sm text-stone-700 dark:text-stone-300">{item}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
 
+              {/* Avantages */}
+              {services.benefits && services.benefits.length > 0 && (
+                <div>
+                  <h4 className="uppercase tracking-widest text-xs font-bold mb-4 flex items-center gap-2">
+                    <Heart className="w-4 h-4" /> Pourquoi nos clientes adorent
+                  </h4>
+                  <div className="grid grid-cols-1 gap-3">
+                    {services.benefits.map((benefit, index) => (
+                      <div key={index} className="flex items-start gap-3">
+                        <div className="w-5 h-5 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center mt-0.5">
+                          <span className="text-emerald-600 text-xs">✓</span>
+                        </div>
+                        <span className="text-sm text-stone-700 dark:text-stone-300">{benefit}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Conseils d'entretien */}
+              {services.careTips && services.careTips.length > 0 && (
+                <div>
+                  <h4 className="uppercase tracking-widest text-xs font-bold mb-4 flex items-center gap-2">
+                    <Users className="w-4 h-4" /> Conseils d’entretien
+                  </h4>
+                  <ul className="text-sm space-y-2 text-stone-600 dark:text-stone-400">
+                    {services.careTips.map((tip, index) => (
+                      <li key={index} className="flex gap-2">
+                        <span className="text-amber-600">•</span> {tip}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Bouton Réservation */}
               <Link
                 to="/contact"
-                className="block w-full py-5 text-center bg-stone-950 dark:bg-amber-600 text-white font-semibold tracking-widest uppercase hover:bg-amber-600 transition-all"
+                className="block w-full py-5 text-center bg-stone-950 dark:bg-amber-600 text-white font-semibold tracking-widest uppercase hover:bg-amber-600 transition-all mt-8"
               >
                 Réserver cette prestation
               </Link>
