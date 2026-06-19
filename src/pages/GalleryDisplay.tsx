@@ -15,7 +15,14 @@ import { Award, Star, ShoppingBag, ZoomIn } from "lucide-react";
 import Navbar from "../../src/components/Navbar";
 import Footer from "../../src/components/Footer";
 
-export default function GalleryDisplay() {
+interface GalleryImage {
+  src: string;
+  alt: string;
+  span: string;
+  price?: string;
+}
+
+export default function Gallery() {
   const [activeTab, setActiveTab] = useState<'realisations' | 'boutique'>('realisations');
 
   const textVariants: Variants = {
@@ -43,45 +50,25 @@ export default function GalleryDisplay() {
   };
 
   // ==================== DONNÉES ====================
-  const realisations = [
-    { src: "../../public/women/1.jpg", alt: "Tresses Fulani avec perles", span: "col-span-8 row-span-2" },
-    {src: "../../public/women/1.jpg", alt: "Box Braids longues", span: "col-span-4 row-span-3" },
-    { src: "../../public/women/1.jpg", alt: "Vanilles naturelles", span: "col-span-4 row-span-1" },
-    { src: "../../public/women/1.jpg", alt: "Tresses Maïssa", span: "col-span-4 row-span-2" },
-    { src: "../../public/women/1.jpg", alt: "Détail tresses collées", span: "col-span-4 row-span-1" },
-    { src: "../../public/women/1.jpg", alt: "Style bohème chic", span: "col-span-6 row-span-2" },
-    { src: "../../public/women/1.jpg", alt: "Braids africaines", span: "col-span-6 row-span-1" },
-    { src: "../../public/women/1.jpg", alt: "Tresses Fulani avec perles", span: "col-span-8 row-span-2" },
-    {src: "../../public/women/1.jpg", alt: "Box Braids longues", span: "col-span-4 row-span-3" },
-    { src: "../../public/women/1.jpg", alt: "Vanilles naturelles", span: "col-span-4 row-span-1" },
-    { src: "../../public/women/1.jpg", alt: "Tresses Maïssa", span: "col-span-4 row-span-2" },
-    { src: "../../public/women/1.jpg", alt: "Détail tresses collées", span: "col-span-4 row-span-1" },
-    { src: "../../public/women/1.jpg", alt: "Style bohème chic", span: "col-span-6 row-span-2" },
-    { src: "../../public/women/1.jpg", alt: "Braids africaines", span: "col-span-6 row-span-1" },
-    { src: "../../public/women/1.jpg", alt: "Tresses Fulani avec perles", span: "col-span-8 row-span-2" },
-    {src: "../../public/women/1.jpg", alt: "Box Braids longues", span: "col-span-4 row-span-3" },
-    { src: "../../public/women/1.jpg", alt: "Vanilles naturelles", span: "col-span-4 row-span-1" },
-    { src: "../../public/women/1.jpg", alt: "Tresses Maïssa", span: "col-span-4 row-span-2" },
-    { src: "../../public/women/1.jpg", alt: "Détail tresses collées", span: "col-span-4 row-span-1" },
-    { src: "../../public/women/1.jpg", alt: "Style bohème chic", span: "col-span-6 row-span-2" },
-    { src: "../../public/women/1.jpg", alt: "Braids africaines", span: "col-span-6 row-span-1" },
+  const realisations: GalleryImage[] = [
+    { src: "/images/realisations/1.jpg", alt: "Tresses Fulani avec perles", span: "col-span-8 row-span-2" },
+    { src: "/images/realisations/2.jpg", alt: "Box Braids longues", span: "col-span-4 row-span-3" },
+    { src: "/images/realisations/3.jpg", alt: "Vanilles naturelles", span: "col-span-4 row-span-1" },
+    { src: "/images/realisations/4.jpg", alt: "Tresses Maïssa", span: "col-span-4 row-span-2" },
+    { src: "/images/realisations/5.jpg", alt: "Détail tresses collées", span: "col-span-4 row-span-1" },
+    { src: "/images/realisations/6.jpg", alt: "Style bohème chic", span: "col-span-6 row-span-2" },
+    { src: "/images/realisations/7.jpg", alt: "Braids africaines", span: "col-span-6 row-span-1" },
+    { src: "/images/realisations/8.jpg", alt: "Finition miroir", span: "col-span-4 row-span-2" },
   ];
 
-  const boutique = [
-    { src: "../../public/perruques/p00.jpg", alt: "Perruque Lace Front 613", span: "col-span-8 row-span-2", price: "85 000 FCFA" },
-    { src: "../../public/perruques/p1.jpg", alt: "Perruque Closure 4x4", span: "col-span-4 row-span-3", price: "65 000 FCFA" },
-    { src: "../../public/perruques/p2.jpg", alt: "Perruque HD Lace 13x6", span: "col-span-4 row-span-1", price: "120 000 FCFA" },
-    { src: "../../public/perruques/p3.jpg", alt: "Perruque Bob 12 pouces", span: "col-span-4 row-span-2", price: "55 000 FCFA" },
-    { src: "../../public/perruques/p4.jpg", alt: "Extensions Clip-in", span: "col-span-4 row-span-1", price: "45 000 FCFA" },
-    { src: "../../public/perruques/p5.jpg", alt: "Prothèse Capillaire", span: "col-span-6 row-span-2", price: "150 000 FCFA" },
-    { src: "../../public/perruques/p6.jpg", alt: "Frontal 13x4", span: "col-span-6 row-span-1", price: "90 000 FCFA" },
-    { src: "../../public/perruques/p10.jpg", alt: "Perruque Lace Front 613", span: "col-span-8 row-span-2", price: "85 000 FCFA" },
-    { src: "../../public/perruques/p1.jpg", alt: "Perruque Closure 4x4", span: "col-span-4 row-span-3", price: "65 000 FCFA" },
-    { src: "../../public/perruques/p2.jpg", alt: "Perruque HD Lace 13x6", span: "col-span-4 row-span-1", price: "120 000 FCFA" },
-    { src: "../../public/perruques/p3.jpg", alt: "Perruque Bob 12 pouces", span: "col-span-4 row-span-2", price: "55 000 FCFA" },
-    { src: "../../public/perruques/p4.jpg", alt: "Extensions Clip-in", span: "col-span-4 row-span-1", price: "45 000 FCFA" },
-    { src: "../../public/perruques/p5.jpg", alt: "Prothèse Capillaire", span: "col-span-6 row-span-2", price: "150 000 FCFA" },
-    { src: "../../public/perruques/p6.jpg", alt: "Frontal 13x4", span: "col-span-6 row-span-1", price: "90 000 FCFA" },
+  const boutique: GalleryImage[] = [
+    { src: "/images/perruques/lace-613.jpg", alt: "Perruque Lace Front 613", span: "col-span-8 row-span-2", price: "85 000 FCFA" },
+    { src: "/images/perruques/closure-4x4.jpg", alt: "Perruque Closure 4x4", span: "col-span-4 row-span-3", price: "65 000 FCFA" },
+    { src: "/images/perruques/hd-lace.jpg", alt: "Perruque HD Lace 13x6", span: "col-span-4 row-span-1", price: "120 000 FCFA" },
+    { src: "/images/perruques/bob-wig.jpg", alt: "Perruque Bob 12 pouces", span: "col-span-4 row-span-2", price: "55 000 FCFA" },
+    { src: "/images/autres/extensions-clipin.jpg", alt: "Extensions Clip-in", span: "col-span-4 row-span-1", price: "45 000 FCFA" },
+    { src: "/images/autres/prothese.jpg", alt: "Prothèse Capillaire", span: "col-span-6 row-span-2", price: "150 000 FCFA" },
+    { src: "/images/perruques/frontal-13x4.jpg", alt: "Frontal 13x4", span: "col-span-6 row-span-1", price: "90 000 FCFA" },
   ];
 
   const currentImages = activeTab === 'realisations' ? realisations : boutique;
@@ -93,7 +80,7 @@ export default function GalleryDisplay() {
       {/* Background Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] max-w-[800px] bg-amber-100/10 dark:bg-amber-950/5 rounded-full blur-[130px] pointer-events-none" />
 
-      <div className="max-w-7xl mt-6 mx-auto px-4 sm:px-6 md:px-12 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
           {/* ===================== GALLERY ===================== */}
@@ -143,7 +130,7 @@ export default function GalleryDisplay() {
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-full rounded-2xl object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
 
                   {/* Overlay */}
