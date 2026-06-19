@@ -33,8 +33,89 @@ const servicesData = [
             price: "À partir de 90€",
             duration: "3h - 5h",
             image: "../../public/men/11.jpg",
+            featured: true
+        },
+        {
+            id: 4,
+            title: "Fausses Locks & Twists",
+            description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
+            price: "À partir de 90€",
+            duration: "3h - 5h",
+            image: "../../public/men/11.jpg",
             featured: false
-        }
+        },
+        {
+            id: 4,
+            title: "Fausses Locks & Twists",
+            description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
+            price: "À partir de 90€",
+            duration: "3h - 5h",
+            image: "../../public/men/11.jpg",
+            featured: false
+        },
+        {
+            id: 4,
+            title: "Fausses Locks & Twists",
+            description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
+            price: "À partir de 90€",
+            duration: "3h - 5h",
+            image: "../../public/men/11.jpg",
+            featured: false
+        },
+        {
+            id: 4,
+            title: "Fausses Locks & Twists",
+            description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
+            price: "À partir de 90€",
+            duration: "3h - 5h",
+            image: "../../public/men/11.jpg",
+            featured: false
+        },
+        {
+            id: 4,
+            title: "Fausses Locks & Twists",
+            description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
+            price: "À partir de 90€",
+            duration: "3h - 5h",
+            image: "../../public/men/11.jpg",
+            featured: false
+        },
+        {
+            id: 4,
+            title: "Fausses Locks & Twists",
+            description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
+            price: "À partir de 90€",
+            duration: "3h - 5h",
+            image: "../../public/men/11.jpg",
+            featured: true
+        },
+        {
+            id: 4,
+            title: "Fausses Locks & Twists",
+            description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
+            price: "À partir de 90€",
+            duration: "3h - 5h",
+            image: "../../public/men/11.jpg",
+            featured: false
+        },
+        {
+            id: 4,
+            title: "Fausses Locks & Twists",
+            description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
+            price: "À partir de 90€",
+            duration: "3h - 5h",
+            image: "../../public/men/11.jpg",
+            featured: false
+        },
+        {
+            id: 4,
+            title: "Fausses Locks & Twists",
+            description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
+            price: "À partir de 90€",
+            duration: "3h - 5h",
+            image: "../../public/men/11.jpg",
+            featured: false
+        },
     ];
 
     export default servicesData;

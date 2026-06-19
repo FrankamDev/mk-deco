@@ -4,12 +4,11 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export default function SalonShowcase() {
-    // Courbe de Bézier haut de gamme pour les transitions
-    const transitionEase = [0.16, 1, 0.3, 1];
+
 
     const textVariants = {
         hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: transitionEase } }
+        visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] as any } }
     };
 
     return (
@@ -30,7 +29,7 @@ export default function SalonShowcase() {
                             initial={{ opacity: 0, x: -40, scale: 0.95 }}
                             whileInView={{ opacity: 1, x: 0, scale: 1 }}
                             viewport={{ once: true, margin: "-100px" }}
-                            transition={{ duration: 1, ease: transitionEase }}
+                            transition={{ duration: 1,ease: [0.16, 1, 0.3, 1] as any }}
                             className="absolute left-0 top-0 w-[70%] h-[75%] border border-stone-200/60 dark:border-stone-900 overflow-hidden shadow-md"
                         >
                             <img 
@@ -45,7 +44,7 @@ export default function SalonShowcase() {
                             initial={{ opacity: 0, y: 50, x: 30 }}
                             whileInView={{ opacity: 1, y: 0, x: 0 }}
                             viewport={{ once: true, margin: "-100px" }}
-                            transition={{ duration: 1, delay: 0.2, ease: transitionEase }}
+                            transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] as any }}
                             className="absolute right-0 bottom-0 w-[60%] h-[65%] border-4 border-white dark:border-stone-950 overflow-hidden shadow-2xl z-20"
                         >
                             <img 

@@ -4,7 +4,7 @@ import {
      Phone, Mail, MapPin, 
     Clock, ArrowRight, Shield, CreditCard, Sparkles 
 } from 'lucide-react';
-import { BsInstagram, BsWhatsapp, BsYoutube } from 'react-icons/bs';
+import { BsInstagram, BsYoutube } from 'react-icons/bs';
 import { FaFacebook } from 'react-icons/fa';
 
 export default function Footer() {
