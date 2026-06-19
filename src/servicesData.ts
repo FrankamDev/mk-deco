@@ -36,7 +36,7 @@ const servicesData = [
             featured: true
         },
         {
-            id: 4,
+            id: 5,
             title: "Fausses Locks & Twists",
             description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
             price: "À partir de 90€",
@@ -45,7 +45,7 @@ const servicesData = [
             featured: false
         },
         {
-            id: 4,
+            id: 6,
             title: "Fausses Locks & Twists",
             description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
             price: "À partir de 90€",
@@ -54,7 +54,7 @@ const servicesData = [
             featured: false
         },
         {
-            id: 4,
+            id: 7,
             title: "Fausses Locks & Twists",
             description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
             price: "À partir de 90€",
@@ -63,7 +63,7 @@ const servicesData = [
             featured: false
         },
         {
-            id: 4,
+            id: 8,
             title: "Fausses Locks & Twists",
             description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
             price: "À partir de 90€",
@@ -72,7 +72,7 @@ const servicesData = [
             featured: false
         },
         {
-            id: 4,
+            id: 9,
             title: "Fausses Locks & Twists",
             description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
             price: "À partir de 90€",
@@ -81,7 +81,7 @@ const servicesData = [
             featured: false
         },
         {
-            id: 4,
+            id: 10,
             title: "Fausses Locks & Twists",
             description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
             price: "À partir de 90€",
@@ -90,7 +90,7 @@ const servicesData = [
             featured: true
         },
         {
-            id: 4,
+            id: 11,
             title: "Fausses Locks & Twists",
             description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
             price: "À partir de 90€",
@@ -99,7 +99,7 @@ const servicesData = [
             featured: false
         },
         {
-            id: 4,
+            id: 12,
             title: "Fausses Locks & Twists",
             description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
             price: "À partir de 90€",
@@ -108,7 +108,7 @@ const servicesData = [
             featured: false
         },
         {
-            id: 4,
+            id: 13,
             title: "Fausses Locks & Twists",
             description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
             price: "À partir de 90€",

@@ -6,6 +6,8 @@ import Contact from "./pages/Contact"
 import GalleryExpertise from "./components/GalleryExpertise"
 import ServiceDetail from "./components/ServiceDetail"
 import FloatingChat from "./components/FloatingChat"
+import Prestations from "./components/Prestations"
+import PrestationsDetails from "./pages/PrestationsDetails"
 
 
 function App() {
@@ -19,7 +21,9 @@ function App() {
      <Route element={<Home/>} path="/" />
      <Route element={<Contact/>} path="/contact" />
      <Route element={<GalleryExpertise/>} path="/gallery" />
+     <Route element={<Prestations/>} path="/prestations" />
      <Route path="/service/:id"  element={<ServiceDetail />} />
+     <Route path="/prestations/:id"  element={<PrestationsDetails />} />
     </Routes>
     
     </BrowserRouter>
