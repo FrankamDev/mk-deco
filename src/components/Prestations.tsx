@@ -106,7 +106,7 @@ export default function Services() {
 
                   <Link 
                     to={`/prestations/${service.id}`}
-                    className="w-full py-4 border border-stone-300 dark:border-stone-700 hover:border-amber-600 hover:bg-amber-600 hover:text-white text-sm font-semibold tracking-widest uppercase flex items-center justify-center gap-2 transition-all group-hover:border-amber-600"
+                    className="w-full py-4 border border-stone-300 dark:text-stone-200 dark:border-stone-700 hover:border-amber-600 hover:bg-amber-600 hover:text-white text-sm font-semibold tracking-widest uppercase flex items-center justify-center gap-2 transition-all group-hover:border-amber-600"
                   >
                     DÉCOUVRIR
                     <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
