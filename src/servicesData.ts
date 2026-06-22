@@ -5,7 +5,7 @@ const servicesData = [
             description: "Des divisions géométriques parfaites et une tension maîtrisée pour préserver la santé de votre cuir chevelu.",
             price: "À partir de 5000 FCFA",
             duration: "2h30 - 4h",
-            image: "../../public/women/1.jpg",
+            image: "/women/1.jpg",
             featured: true // Prendra plus de place dans la grille
         },
         {
