@@ -104,7 +104,7 @@ const servicesData = [
             description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
             price: "À partir de 5000",
             duration: "3h - 5h",
-              image: "/public/women/f14.jpg",
+              image: "/women/f14.jpg",
             featured: false
         },
         {
