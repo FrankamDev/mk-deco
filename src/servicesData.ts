@@ -6,7 +6,7 @@ const servicesData = [
             price: "À partir de 5000 FCFA",
             duration: "2h30 - 4h",
             image: "/women/1.jpg",
-            featured: true // Prendra plus de place dans la grille
+            featured: true 
         },
         {
             id: 2,
@@ -14,7 +14,7 @@ const servicesData = [
             description: "Des lignes épurées et des designs sur-mesure, du style minimaliste aux motifs les plus complexes.",
             price: "À partir de 6500",
             duration: "1h - 2h",
-            image: "../../public/men/11.jpg",
+            image: "/men/11.jpg",
             featured: false
         },
         {
@@ -23,7 +23,7 @@ const servicesData = [
             description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
             price: "À partir de 10000",
             duration: "3h - 5h",
-            image: "../../public/men/11.jpg",
+            image: "/men/11.jpg",
             featured: false
         },
         {
@@ -32,7 +32,7 @@ const servicesData = [
             description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
             price: "À partir de 6000",
             duration: "3h - 5h",
-            image: "../../public/women/f13.jpg",
+            image: "/women/f13.jpg",
             featured: true
         },
         {
@@ -41,7 +41,7 @@ const servicesData = [
             description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
             price: "À partir de 6000",
             duration: "3h - 5h",
-              image: "../../public/women/f13.jpg",
+              image: "/women/f13.jpg",
             featured: false
         },
         {
@@ -50,7 +50,7 @@ const servicesData = [
             description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
             price: "À partir de 9000",
             duration: "3h - 5h",
-              image: "../../public/women/f13.jpg",
+              image: "/women/f13.jpg",
             featured: false
         },
         {
@@ -59,7 +59,7 @@ const servicesData = [
             description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
             price: "À partir de 9000",
             duration: "3h - 5h",
-            image: "../../public/men/11.jpg",
+            image: "/men/11.jpg",
             featured: false
         },
         {
@@ -68,7 +68,7 @@ const servicesData = [
             description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
             price: "À partir de 9000",
             duration: "3h - 5h",
-            image: "../../public/men/11.jpg",
+            image: "/men/11.jpg",
             featured: false
         },
         {
@@ -77,7 +77,7 @@ const servicesData = [
             description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
             price: "À partir de 9000",
             duration: "3h - 5h",
-            image: "../../public/women/f7.jpg",
+            image: "/women/f7.jpg",
             featured: false
         },
         {
@@ -86,7 +86,7 @@ const servicesData = [
             description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
             price: "À partir de 4000",
             duration: "3h - 5h",
-         image: "../../public/women/f8.jpg",
+         image: "/women/f8.jpg",
             featured: true
         },
         {
@@ -95,7 +95,7 @@ const servicesData = [
             description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
             price: "À partir de 2000",
             duration: "3h - 5h",
-              image: "../../public/women/f9.jpg",
+              image: "/women/f9.jpg",
             featured: false
         },
         {
@@ -104,7 +104,7 @@ const servicesData = [
             description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
             price: "À partir de 5000",
             duration: "3h - 5h",
-              image: "../../public/women/f14.jpg",
+              image: "/public/women/f14.jpg",
             featured: false
         },
         {
@@ -113,7 +113,7 @@ const servicesData = [
             description: "Un volume aérien et une texture naturelle premium pour un style bohème et sophistiqué.",
             price: "À partir de 7000",
             duration: "3h - 5h",
-              image: "../../public/women/f13.jpg",
+              image: "/women/f13.jpg",
             featured: false
         },
     ];
