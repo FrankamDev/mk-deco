@@ -49,7 +49,7 @@ export default function Hero() {
                         variants={fadeInUp}
                         className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-50 dark:bg-stone-900 border border-amber-200/30 dark:border-amber-500/10 text-[10px] md:text-xs font-medium tracking-widest text-amber-800 dark:text-amber-400 uppercase mb-4 md:mb-6"
                     >
-                        <Sparkles className="w-3 h-3 text-amber-600 dark:text-amber-400" />
+                        <Sparkles className="w-3 homecercle h-3 text-amber-600 dark:text-amber-400" />
                         L'art du tressage haut de gamme
                     </motion.div>
 
@@ -145,7 +145,7 @@ export default function Hero() {
                         transition={{ delay: 0.8 }}
                         className="absolute -left-2 sm:-left-6 bottom-10 p-2.5 bg-stone-950 dark:bg-amber-600 text-white shadow-lg rounded-none hidden sm:flex flex-col text-center min-w-[120px]"
                     >
-                        
+
                         <span className="text-[9px] tracking-widest uppercase font-light opacity-80">Prochain RDV</span>
                         <span className="text-xs font-bold font-serif">Demain 14:00</span>
                     </motion.div>

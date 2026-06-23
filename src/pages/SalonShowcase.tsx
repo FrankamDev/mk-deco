@@ -60,19 +60,19 @@ export default function SalonShowcase() {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: 0.4 }}
-                            className="absolute left-[5%] bottom-[8%] z-30 p-4 bg-stone-950 dark:bg-amber-600 text-white flex items-center gap-3.5 shadow-xl rounded-none"
+                            className="absolute left-[5%] bottom-[8%] z-30 p-4 bg-stone-950 dark:bg-amber-600 text-white flex rounded-3xl items-center gap-3.5 shadow-xl rounded-none"
                         >
                             <div className="w-9 h-9 bg-white/10 flex items-center justify-center shrink-0">
                                 <MapPin className="w-4 h-4 text-amber-400 dark:text-white" />
                             </div>
                             <div className="text-left">
                                 <p className="text-[9px] tracking-widest uppercase font-light text-stone-400 dark:text-amber-100">Quartier Opéra</p>
-                                <p className="text-xs font-serif font-bold tracking-wide">Paris Ier Arrondissement</p>
+                                <p className="text-xs font-serif font-bold tracking-wide">Yaoundé, Bastos & Odza </p>
                             </div>
                         </motion.div>
                     </div>
 
-                    {/* --- ZONE DROITE : HISTOIRE & VISITE GUIDÉE (6 Colonnes) --- */}
+                    
                     <motion.div 
                         className="lg:col-span-6 flex flex-col items-center lg:items-start text-center lg:text-left lg:pl-6"
                         initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }}
@@ -97,8 +97,8 @@ export default function SalonShowcase() {
                         <motion.div variants={textVariants} className="mt-8 space-y-5 w-full max-w-xl text-left">
                             
                             <div className="flex gap-4 items-start group">
-                                <div className="w-10 h-10 border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/50 flex items-center justify-center shrink-0 group-hover:border-amber-600 dark:group-hover:border-amber-400 transition-colors">
-                                    <Compass className="w-4 h-4 text-stone-800 dark:text-stone-200" />
+                                <div className="w-10 h-10 border  border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/50 flex items-center justify-center shrink-0 group-hover:border-amber-600 dark:group-hover:border-amber-400 transition-colors">
+                                    <Compass className="w-4 cercle1 h-4 text-stone-800 dark:text-stone-200" />
                                 </div>
                                 <div className="pt-0.5">
                                     <h4 className="text-xs font-bold uppercase tracking-wide text-stone-900 dark:text-stone-100">Intimité Préservée</h4>
@@ -107,8 +107,8 @@ export default function SalonShowcase() {
                             </div>
 
                             <div className="flex gap-4 items-start group">
-                                <div className="w-10 h-10 border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/50 flex items-center justify-center shrink-0 group-hover:border-amber-600 dark:group-hover:border-amber-400 transition-colors">
-                                    <Scissors className="w-4 h-4 text-stone-800 dark:text-stone-200" />
+                                <div className="w-10  h-10 border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/50 flex items-center justify-center shrink-0 group-hover:border-amber-600 dark:group-hover:border-amber-400 transition-colors">
+                                    <Scissors className="w-4 cercle2 h-4 text-stone-800 dark:text-stone-200" />
                                 </div>
                                 <div className="pt-0.5">
                                     <h4 className="text-xs font-bold uppercase tracking-wide text-stone-900 dark:text-stone-100">Postes de Tressage Ergonomiques</h4>
@@ -118,7 +118,7 @@ export default function SalonShowcase() {
 
                             <div className="flex gap-4 items-start group">
                                 <div className="w-10 h-10 border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/50 flex items-center justify-center shrink-0 group-hover:border-amber-600 dark:group-hover:border-amber-400 transition-colors">
-                                    <Sparkles className="w-4 h-4 text-stone-800 dark:text-stone-200" />
+                                    <Sparkles className="w-4 cercle3 h-4 text-stone-800 dark:text-stone-200" />
                                 </div>
                                 <div className="pt-0.5">
                                     <h4 className="text-xs font-bold uppercase tracking-wide text-stone-900 dark:text-stone-100">Hygiène Norme Clinique</h4>

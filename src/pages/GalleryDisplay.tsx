@@ -51,24 +51,24 @@ export default function Gallery() {
 
   // ==================== DONNÉES ====================
   const realisations: GalleryImage[] = [
-    { src: "/images/realisations/1.jpg", alt: "Tresses Fulani avec perles", span: "col-span-8 row-span-2" },
-    { src: "/images/realisations/2.jpg", alt: "Box Braids longues", span: "col-span-4 row-span-3" },
-    { src: "/images/realisations/3.jpg", alt: "Vanilles naturelles", span: "col-span-4 row-span-1" },
-    { src: "/images/realisations/4.jpg", alt: "Tresses Maïssa", span: "col-span-4 row-span-2" },
-    { src: "/images/realisations/5.jpg", alt: "Détail tresses collées", span: "col-span-4 row-span-1" },
-    { src: "/images/realisations/6.jpg", alt: "Style bohème chic", span: "col-span-6 row-span-2" },
-    { src: "/images/realisations/7.jpg", alt: "Braids africaines", span: "col-span-6 row-span-1" },
-    { src: "/images/realisations/8.jpg", alt: "Finition miroir", span: "col-span-4 row-span-2" },
+    { src: "/men/1.jpg", alt: "Tresses Fulani avec perles", span: "col-span-8 row-span-2" },
+    { src: "/men/2.jpg", alt: "Box Braids longues", span: "col-span-4 row-span-3" },
+    { src: "/men/3.jpg", alt: "Vanilles naturelles", span: "col-span-4 row-span-1" },
+    { src: "/men/4.jpg", alt: "Tresses Maïssa", span: "col-span-4 row-span-2" },
+    { src: "/men/5.jpg", alt: "Détail tresses collées", span: "col-span-4 row-span-1" },
+    { src: "/men/6.jpg", alt: "Style bohème chic", span: "col-span-6 row-span-2" },
+    { src: "/men/7.jpg", alt: "Braids africaines", span: "col-span-6 row-span-1" },
+    { src: "/men/8.jpg", alt: "Finition miroir", span: "col-span-4 row-span-2" },
   ];
 
   const boutique: GalleryImage[] = [
-    { src: "/images/perruques/lace-613.jpg", alt: "Perruque Lace Front 613", span: "col-span-8 row-span-2", price: "85 000 FCFA" },
-    { src: "/images/perruques/closure-4x4.jpg", alt: "Perruque Closure 4x4", span: "col-span-4 row-span-3", price: "65 000 FCFA" },
-    { src: "/images/perruques/hd-lace.jpg", alt: "Perruque HD Lace 13x6", span: "col-span-4 row-span-1", price: "120 000 FCFA" },
-    { src: "/images/perruques/bob-wig.jpg", alt: "Perruque Bob 12 pouces", span: "col-span-4 row-span-2", price: "55 000 FCFA" },
-    { src: "/images/autres/extensions-clipin.jpg", alt: "Extensions Clip-in", span: "col-span-4 row-span-1", price: "45 000 FCFA" },
-    { src: "/images/autres/prothese.jpg", alt: "Prothèse Capillaire", span: "col-span-6 row-span-2", price: "150 000 FCFA" },
-    { src: "/images/perruques/frontal-13x4.jpg", alt: "Frontal 13x4", span: "col-span-6 row-span-1", price: "90 000 FCFA" },
+    { src: "/perruques/13.jpg", alt: "Perruque Lace Front 613", span: "col-span-8 row-span-2", price: "85 000 FCFA" },
+    { src: "/perruques/4.jpg", alt: "Perruque Closure 4x4", span: "col-span-4 row-span-3", price: "65 000 FCFA" },
+    { src: "/perruques/5.jpg", alt: "Perruque HD Lace 13x6", span: "col-span-4 row-span-1", price: "120 000 FCFA" },
+    { src: "/perruques/6.jpg", alt: "Perruque Bob 12 pouces", span: "col-span-4 row-span-2", price: "55 000 FCFA" },
+    { src: "/perruques/7.jpg", alt: "Extensions Clip-in", span: "col-span-4 row-span-1", price: "45 000 FCFA" },
+    { src: "/perruques/8.jpg", alt: "Prothèse Capillaire", span: "col-span-6 row-span-2", price: "150 000 FCFA" },
+    { src: "/perruques/4.jpg", alt: "Frontal 13x4", span: "col-span-6 row-span-1", price: "90 000 FCFA" },
   ];
 
   const currentImages = activeTab === 'realisations' ? realisations : boutique;
@@ -125,12 +125,12 @@ export default function Gallery() {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
-                  className={`relative overflow-hidden border border-stone-200/60 dark:border-stone-800 group cursor-pointer ${image.span}`}
+                  className={`relative rounded-2xl overflow-hidden border border-stone-200/60 dark:border-stone-800 group cursor-pointer ${image.span}`}
                 >
                   <img
                     src={image.src}
                     alt={image.alt}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full rounded-2xl object-cover transition-transform duration-700 group-hover:scale-105"
                   />
 
                   {/* Overlay */}

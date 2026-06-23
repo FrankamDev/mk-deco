@@ -160,7 +160,7 @@ export default function Footer() {
                             <MapPin className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" /> Le Salon
                         </h5>
                         <p className="text-stone-500 dark:text-stone-400 leading-relaxed mb-6">
-                            14 Rue de la Paix<br />75002 Paris
+                            Bastos & Odza<br /> Yaoundé
                         </p>
                         <div className="flex items-center gap-3">
                             <a href="#" className="w-8 h-8 rounded-full bg-stone-100 dark:bg-stone-900 border border-stone-200 dark:border-stone-800 flex items-center justify-center text-stone-500 hover:text-amber-600 transition-colors"><BsInstagram className="w-4 h-4" /></a>
@@ -172,9 +172,9 @@ export default function Footer() {
 
                 {/* REASSURANCE */}
                 <div className="flex flex-wrap items-center justify-center md:justify-between gap-6 py-8 border-b border-stone-200 dark:border-stone-900 text-[10px] uppercase tracking-wider font-medium text-stone-400">
-                    <div className="flex items-center gap-2"><Shield className="w-3.5 h-3.5 text-emerald-600" /> Réservation Sécurisée</div>
-                    <div className="flex items-center gap-2"><Sparkles className="w-3.5 h-3.5 text-amber-500" /> Diagnostic Offert</div>
-                    <div className="flex items-center gap-2"><CreditCard className="w-3.5 h-3.5 text-blue-500" /> Paiement Flexible</div>
+                    <div className="flex items-center gap-2"><Shield className="w-3.5 homecercle h-3.5 text-emerald-600" /> Réservation Sécurisée</div>
+                    <div className="flex items-center gap-2"><Sparkles className="w-3.5 h-3.5 homecercle text-amber-500" /> Diagnostic Offert</div>
+                    <div className="flex items-center gap-2"><CreditCard className="w-3.5 h-3.5 homecercle text-blue-500" /> Paiement Flexible</div>
                 </div>
 
                 {/* BAS DE PAGE */}
