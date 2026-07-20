@@ -38,7 +38,7 @@ export default function Services() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 md:mb-20 text-center md:text-left">
           <div>
             <span className="text-xs font-semibold tracking-[0.25em] uppercase text-amber-600 dark:text-amber-400 block mb-3">
-              Le Menu NexaTress
+              Le Menu MK Deco
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-light text-stone-950 dark:text-stone-50 tracking-tight">
               Nos Prestations <br className="hidden sm:inline" />

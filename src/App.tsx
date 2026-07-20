@@ -10,6 +10,7 @@ import Prestations from "./components/Prestations"
 import PrestationsDetails from "./pages/PrestationsDetails"
 import GalleryDisplay from "./pages/GalleryDisplay"
 import { BookingSection } from "./pages/BookingSection"
+import LandingPage from "./pages/LandingPage"
 
 
 
@@ -29,6 +30,7 @@ function App() {
      <Route path="/service/:id"  element={<ServiceDetail />} />
      <Route path="/prestations/:id"  element={<PrestationsDetails />} />
      <Route path="/rdv"  element={<BookingSection />} />
+     <Route path="/page" element={<LandingPage/>}/>
      <Route path="/galleries"  element={<GalleryDisplay />} />
     </Routes>
     

@@ -214,7 +214,6 @@
 //     );
 // }
 
-
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MapPin, Send, CheckCircle, Clock } from 'lucide-react';
@@ -223,8 +222,8 @@ import Footer from '../components/Footer';
 
 export default function Contact() {
     // États pour les options de personnalisation
-    const [style, setStyle] = useState<'Box Braids' | 'Cornrows / Nattes collées' | 'Fausses Locks' | 'Twists / Vanilles' | 'Soin profond & Tresses'>('Box Braids');
-    const [place, setPlace] = useState<'au salon (Paris 2e)' | 'à mon domicile (Île-de-France)'>('au salon (Paris 2e)');
+    const [style, setStyle] = useState<'Mobilier sur-mesure' | 'Cuisine intégrée' | 'Rénovation & Restauration' | 'Aménagement extérieur' | 'Devis global projet'>('Mobilier sur-mesure');
+    const [place, setPlace] = useState<"à l'atelier (Yaoundé)" | 'sur site (Bastos & Odza et environs)'>("à l'atelier (Yaoundé)");
     const [date, setDate] = useState('');
     const [timeSlot, setTimeSlot] = useState<'en matinée (9h - 12h)' | 'en après-midi (13h - 17h)' | 'en fin de journée (17h30 - 20h)'>('en matinée (9h - 12h)');
     
@@ -246,7 +245,7 @@ export default function Contact() {
             day: 'numeric'
         });
 
-        const message = `Bonjour NexaTress, je m'appelle ${name}. Je souhaiterais réserver une prestation de ${style} à effectuer ${place}. Je serais disponible le ${formattedDate}, idéalement ${timeSlot}. Vous pouvez me recontacter sur mon ${contactInfo} pour confirmer le créneau.`;
+        const message = `Bonjour Ébénia, je m'appelle ${name}. Je souhaiterais lancer un projet de ${style} à réaliser ${place}. Je serais disponible le ${formattedDate}, idéalement ${timeSlot}. Vous pouvez me recontacter sur mon ${contactInfo} pour confirmer le créneau.`;
 
         const encodedMessage = encodeURIComponent(message);
         setIsSubmitted(true);
@@ -270,16 +269,16 @@ export default function Contact() {
                 <div className="lg:col-span-4 flex flex-col justify-between space-y-12 order-2 lg:order-1">
                     <div className="text-center lg:text-left">
                         <span className="text-xs font-semibold tracking-[0.25em] uppercase text-amber-600 dark:text-amber-400 block mb-3">
-                            Planification Privée
+                            Étude de Projet
                         </span>
                         <h1 className="text-3xl sm:text-4xl font-serif font-light text-stone-950 dark:text-stone-50 tracking-tight leading-tight">
-                            Votre Séance <br />
+                            Votre Projet <br />
                             <span className="font-bold uppercase tracking-wide bg-gradient-to-r from-amber-700 to-stone-950 dark:from-amber-400 dark:to-stone-200 bg-clip-text text-transparent">
                                 Sur-Mesure
                             </span>
                         </h1>
                         <p className="mt-4 text-sm text-stone-600 dark:text-stone-400 font-light leading-relaxed">
-                            Configurez votre demande de rendez-vous en quelques secondes. Nos stylistes préparent votre diagnostic capillaire avant même notre premier échange.
+                            Configurez votre demande de devis en quelques secondes. Nos artisans préparent l'étude de votre projet avant même notre premier échange.
                         </p>
                     </div>
 
@@ -290,14 +289,14 @@ export default function Contact() {
                             </div>
                             <div>
                                 <h4 className="text-[10px] tracking-widest uppercase font-semibold text-stone-400">Rayon d'action</h4>
-                                <p className="text-xs font-medium text-stone-900 dark:text-stone-200">Salon Privé Paris IIe & Déplacements Île-de-France</p>
+                                <p className="text-xs font-medium text-stone-900 dark:text-stone-200">Atelier Yaoundé & Déplacements Région du Centre</p>
                             </div>
                         </div>
                     </div>
 
                     <div className="pt-6 border-t border-stone-200 dark:border-stone-900 text-xs text-stone-500 dark:text-stone-400 flex items-center justify-center lg:justify-start gap-2">
                         <Clock className="w-4 h-4 text-emerald-600" />
-                        <span>Frais de déplacement offerts dès 150€ de prestation</span>
+                        <span>Frais de déplacement offerts dès 150 000 FCFA de prestation</span>
                     </div>
                 </div>
 
@@ -314,13 +313,13 @@ export default function Contact() {
                                     exit={{ opacity: 0 }}
                                     className="space-y-10"
                                 >
-                                    {/* Étape 1 : Le Style Capillaire */}
+                                    {/* Étape 1 : Le Type de Projet */}
                                     <div>
                                         <label className="text-xs font-bold uppercase tracking-widest text-stone-400 block mb-4">
-                                            1. Nature de votre projet capillaire
+                                            1. Nature de votre projet bois
                                         </label>
                                         <div className="flex flex-wrap gap-2.5">
-                                            {['Box Braids', 'Cornrows / Nattes collées', 'Fausses Locks', 'Twists / Vanilles', 'Soin profond & Tresses'].map((item) => (
+                                            {['Mobilier sur-mesure', 'Cuisine intégrée', 'Rénovation & Restauration', 'Aménagement extérieur', 'Devis global projet'].map((item) => (
                                                 <button
                                                     key={item}
                                                     type="button"
@@ -340,7 +339,7 @@ export default function Contact() {
                                     {/* Étape 2 : La Phrase Narrative Augmentée */}
                                     <div className="space-y-6">
                                         <label className="text-xs font-bold uppercase tracking-widest text-stone-400 block">
-                                            2. Détails de votre réservation
+                                            2. Détails de votre demande
                                         </label>
                                         
                                         <div className="text-lg sm:text-2xl font-serif font-light text-stone-900 dark:text-stone-100 leading-relaxed text-left space-y-4">
@@ -357,15 +356,15 @@ export default function Contact() {
                                             </div>
 
                                             <div>
-                                                Je souhaite planifier une pose de <span className="text-stone-950 dark:text-white font-normal underline decoration-amber-600/60 decoration-2">{style}</span>,
+                                                Je souhaite lancer un projet de <span className="text-stone-950 dark:text-white font-normal underline decoration-amber-600/60 decoration-2">{style}</span>,
                                                 à réaliser{' '}
                                                 <select 
                                                     value={place} 
                                                     onChange={(e) => setPlace(e.target.value as any)}
                                                     className="bg-transparent border-b border-stone-300 dark:border-stone-700 text-amber-700 dark:text-amber-400 outline-none cursor-pointer focus:border-amber-600 font-medium font-sans text-base sm:text-xl"
                                                 >
-                                                    <option value="au salon (Paris 2e)">directement au salon de Paris</option>
-                                                    <option value="à mon domicile (Île-de-France)">à mon domicile privé</option>
+                                                    <option value="à l'atelier (Yaoundé)">directement à l'atelier de Yaoundé</option>
+                                                    <option value="sur site (Bastos & Odza et environs)">directement sur site chez vous</option>
                                                 </select>.
                                             </div>
 
@@ -410,7 +409,7 @@ export default function Contact() {
                                         className="w-full sm:w-auto px-8 py-4 text-xs font-semibold tracking-widest uppercase text-white bg-emerald-600 hover:bg-emerald-500 rounded-none shadow-xl transition-all duration-300 flex items-center justify-center gap-3 group"
                                     >
                                         <Send className="w-3.5 h-3.5 transform group-hover:translate-x-1 group-hover:-translate-y-0.5 transition-transform" />
-                                        Confirmer le créneau sur WhatsApp
+                                        Envoyer ma demande sur WhatsApp
                                     </button>
                                 </motion.form>
                             ) : (

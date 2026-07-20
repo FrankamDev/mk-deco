@@ -51,24 +51,24 @@ export default function Gallery() {
 
   // ==================== DONNÉES ====================
   const realisations: GalleryImage[] = [
-    { src: "/men/1.jpg", alt: "Tresses Fulani avec perles", span: "col-span-8 row-span-2" },
-    { src: "/men/2.jpg", alt: "Box Braids longues", span: "col-span-4 row-span-3" },
-    { src: "/men/3.jpg", alt: "Vanilles naturelles", span: "col-span-4 row-span-1" },
-    { src: "/men/4.jpg", alt: "Tresses Maïssa", span: "col-span-4 row-span-2" },
-    { src: "/men/5.jpg", alt: "Détail tresses collées", span: "col-span-4 row-span-1" },
-    { src: "/men/6.jpg", alt: "Style bohème chic", span: "col-span-6 row-span-2" },
-    { src: "/men/7.jpg", alt: "Braids africaines", span: "col-span-6 row-span-1" },
-    { src: "/men/8.jpg", alt: "Finition miroir", span: "col-span-4 row-span-2" },
+    { src: "/men/1.jpg", alt: "Table en chêne massif sur mesure", span: "col-span-8 row-span-2" },
+    { src: "/men/2.jpg", alt: "Dressing sur-mesure", span: "col-span-4 row-span-3" },
+    { src: "/men/3.jpg", alt: "Finitions bois naturel", span: "col-span-4 row-span-1" },
+    { src: "/men/4.jpg", alt: "Escalier en bois massif", span: "col-span-4 row-span-2" },
+    { src: "/men/5.jpg", alt: "Détail assemblage bois", span: "col-span-4 row-span-1" },
+    { src: "/men/6.jpg", alt: "Style contemporain chic", span: "col-span-6 row-span-2" },
+    { src: "/men/7.jpg", alt: "Mobilier artisanal", span: "col-span-6 row-span-1" },
+    { src: "/men/8.jpg", alt: "Finition vernis miroir", span: "col-span-4 row-span-2" },
   ];
 
   const boutique: GalleryImage[] = [
-    { src: "/perruques/13.jpg", alt: "Perruque Lace Front 613", span: "col-span-8 row-span-2", price: "85 000 FCFA" },
-    { src: "/perruques/4.jpg", alt: "Perruque Closure 4x4", span: "col-span-4 row-span-3", price: "65 000 FCFA" },
-    { src: "/perruques/5.jpg", alt: "Perruque HD Lace 13x6", span: "col-span-4 row-span-1", price: "120 000 FCFA" },
-    { src: "/perruques/6.jpg", alt: "Perruque Bob 12 pouces", span: "col-span-4 row-span-2", price: "55 000 FCFA" },
-    { src: "/perruques/7.jpg", alt: "Extensions Clip-in", span: "col-span-4 row-span-1", price: "45 000 FCFA" },
-    { src: "/perruques/8.jpg", alt: "Prothèse Capillaire", span: "col-span-6 row-span-2", price: "150 000 FCFA" },
-    { src: "/perruques/4.jpg", alt: "Frontal 13x4", span: "col-span-6 row-span-1", price: "90 000 FCFA" },
+    { src: "/perruques/13.jpg", alt: "Planche à découper artisanale", span: "col-span-8 row-span-2", price: "85 000 FCFA" },
+    { src: "/perruques/4.jpg", alt: "Boîte en bois sculpté", span: "col-span-4 row-span-3", price: "65 000 FCFA" },
+    { src: "/perruques/5.jpg", alt: "Étagère murale suspendue", span: "col-span-4 row-span-1", price: "120 000 FCFA" },
+    { src: "/perruques/6.jpg", alt: "Tabouret compact 30 cm", span: "col-span-4 row-span-2", price: "55 000 FCFA" },
+    { src: "/perruques/7.jpg", alt: "Porte-revues bois clipsable", span: "col-span-4 row-span-1", price: "45 000 FCFA" },
+    { src: "/perruques/8.jpg", alt: "Console d'entrée artisanale", span: "col-span-6 row-span-2", price: "150 000 FCFA" },
+    { src: "/perruques/4.jpg", alt: "Cadre bois sur-mesure", span: "col-span-6 row-span-1", price: "90 000 FCFA" },
   ];
 
   const currentImages = activeTab === 'realisations' ? realisations : boutique;
@@ -111,7 +111,7 @@ export default function Gallery() {
                       : 'text-stone-600 dark:text-stone-400 hover:bg-stone-200 dark:hover:bg-stone-800'
                   }`}
                 >
-                  Perruques & Boutique
+                  Boutique & Accessoires
                 </button>
               </div>
             </div>
@@ -178,7 +178,7 @@ export default function Gallery() {
             >
               {activeTab === 'realisations' 
                 ? "Des créations uniques" 
-                : "Perruques & Accessoires"}
+                : "Objets & Accessoires Bois"}
             </motion.h2>
 
             <motion.p
@@ -186,8 +186,8 @@ export default function Gallery() {
               className="mt-6 text-sm sm:text-base text-stone-600 dark:text-stone-400 font-light max-w-xl leading-relaxed"
             >
               {activeTab === 'realisations' 
-                ? "Chaque réalisation est pensée pour sublimer votre beauté tout en protégeant vos cheveux naturels."
-                : "Découvrez notre sélection de perruques lace, closures, frontals et extensions de haute qualité."}
+                ? "Chaque réalisation est pensée pour sublimer votre intérieur tout en valorisant la noblesse du bois massif."
+                : "Découvrez notre sélection d'objets, accessoires et petites pièces en bois de haute qualité."}
             </motion.p>
 
             <motion.div
@@ -200,7 +200,7 @@ export default function Gallery() {
                     <Award className="w-5 h-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
                     <div>
                       <h4 className="text-xs font-bold uppercase tracking-wide text-stone-900 dark:text-stone-100">Technique Experte</h4>
-                      <p className="text-xs text-stone-500 dark:text-stone-400 mt-1">Tressage sans tension excessive</p>
+                      <p className="text-xs text-stone-500 dark:text-stone-400 mt-1">Assemblage précis, sans contrainte excessive sur le bois</p>
                     </div>
                   </div>
 
@@ -217,8 +217,8 @@ export default function Gallery() {
                   <div className="p-5 bg-white dark:bg-stone-900/30 border border-stone-100 dark:border-stone-900/60 flex gap-4 items-start">
                     <ShoppingBag className="w-5 h-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
                     <div>
-                      <h4 className="text-xs font-bold uppercase tracking-wide text-stone-900 dark:text-stone-100">Qualité Premium</h4>
-                      <p className="text-xs text-stone-500 dark:text-stone-400 mt-1">Cheveux 100% vierges</p>
+                      <h4 className="text-xs font-bold uppercase tracking-wide text-stone-900 dark:text-stone-100">Bois Massif Certifié</h4>
+                      <p className="text-xs text-stone-500 dark:text-stone-400 mt-1">Essences 100% naturelles</p>
                     </div>
                   </div>
 
@@ -226,7 +226,7 @@ export default function Gallery() {
                     <Star className="w-5 h-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
                     <div>
                       <h4 className="text-xs font-bold uppercase tracking-wide text-stone-900 dark:text-stone-100">Livraison Rapide</h4>
-                      <p className="text-xs text-stone-500 dark:text-stone-400 mt-1">Disponible en magasin et en ligne</p>
+                      <p className="text-xs text-stone-500 dark:text-stone-400 mt-1">Disponible en atelier et en ligne</p>
                     </div>
                   </div>
                 </>

@@ -13,7 +13,7 @@ export default function Services() {
 
  
 
-  const categories = ["Tous", "Tresses", "Soins", "Extensions", "Entretien", "Événements"];
+  const categories = ["Tous", "Mobilier", "Cuisines", "Extérieur", "Rénovation", "Sur-Mesure"];
 
   const filteredServices = activeCategory === "Tous" 
     ? prestationData
@@ -29,7 +29,7 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             className="text-xs font-semibold tracking-[0.25em] uppercase text-amber-600 dark:text-amber-400"
           >
-            L'Expérience NexaTress
+            L'Expérience Ébénia
           </motion.span>
           <h1 className="text-5xl md:text-6xl font-serif font-light tracking-tight text-stone-950 dark:text-stone-50 mt-4">
             Nos Prestations

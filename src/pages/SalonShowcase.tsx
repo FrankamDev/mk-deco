@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MapPin, Compass, Scissors, Sparkles } from 'lucide-react';
+import { MapPin, Compass, Hammer, Sparkles } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -34,12 +34,12 @@ export default function SalonShowcase() {
                         >
                             <img 
                                 src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=600&auto=format&fit=crop" 
-                                alt="Intérieur du salon NexaTress" 
+                                alt="Intérieur de l'atelier Ébénia" 
                                 className="w-full h-full object-cover object-center scale-105 hover:scale-100 transition-transform duration-700"
                             />
                         </motion.div>
 
-                        {/* Image 2 : Le Détail Premium / Le Bac à shampoing ou Miroir (Avant-plan droit) */}
+                        {/* Image 2 : Le Détail Premium / L'établi ou les finitions (Avant-plan droit) */}
                         <motion.div 
                             initial={{ opacity: 0, y: 50, x: 30 }}
                             whileInView={{ opacity: 1, y: 0, x: 0 }}
@@ -49,7 +49,7 @@ export default function SalonShowcase() {
                         >
                             <img 
                                 src="https://images.unsplash.com/photo-1633681926035-ec1ac984418a?q=80&w=600&auto=format&fit=crop" 
-                                alt="Espace coiffure et miroirs" 
+                                alt="Espace de fabrication et finitions" 
                                 className="w-full h-full object-cover object-center scale-105 hover:scale-100 transition-transform duration-700"
                             />
                         </motion.div>
@@ -79,18 +79,18 @@ export default function SalonShowcase() {
                         variants={{ visible: { transition: { staggerChildren: 0.12 } } }}
                     >
                         <motion.span variants={textVariants} className="text-xs font-semibold tracking-[0.25em] uppercase text-amber-600 dark:text-amber-400 block mb-3">
-                            Le Lieu Sacré
+                            Le Lieu de Création
                         </motion.span>
                         
                         <motion.h2 variants={textVariants} className="text-3xl sm:text-4xl font-serif font-light text-stone-950 dark:text-stone-50 tracking-tight leading-tight">
-                            Un Écrin de Privilège <br />
+                            Un Atelier d'Exception <br />
                             <span className="font-bold uppercase tracking-wide bg-gradient-to-r from-stone-900 via-amber-700 to-stone-950 dark:from-amber-100 dark:via-amber-400 dark:to-stone-200 bg-clip-text text-transparent">
                                 Pensé pour vous
                             </span>
                         </motion.h2>
 
                         <motion.p variants={textVariants} className="mt-6 text-sm sm:text-base text-stone-600 dark:text-stone-400 font-light max-w-xl leading-relaxed">
-                            Oubliez le tumulte de la ville. Notre espace a été entièrement dessiné pour offrir une expérience sensorielle unique : lumières douces indirectes, fauteuils massants ergonomiques lors du soin, et une carte de thés rares sélectionnés pour parfaire votre moment de détente.
+                            Oubliez le tumulte de la ville. Notre atelier a été entièrement conçu pour offrir un savoir-faire d'exception : essences de bois nobles sélectionnées avec soin, outillage de précision entretenu quotidiennement, et un espace pensé pour donner vie à chaque projet sur-mesure.
                         </motion.p>
 
                         {/* Les 3 piliers de l'Atelier */}
@@ -101,18 +101,18 @@ export default function SalonShowcase() {
                                     <Compass className="w-4 cercle1 h-4 text-stone-800 dark:text-stone-200" />
                                 </div>
                                 <div className="pt-0.5">
-                                    <h4 className="text-xs font-bold uppercase tracking-wide text-stone-900 dark:text-stone-100">Intimité Préservée</h4>
-                                    <p className="text-xs text-stone-500 dark:text-stone-400 font-light mt-1">Seulement trois clientes accueillies simultanément pour vous garantir un calme et une attention absolue.</p>
+                                    <h4 className="text-xs font-bold uppercase tracking-wide text-stone-900 dark:text-stone-100">Suivi Personnalisé</h4>
+                                    <p className="text-xs text-stone-500 dark:text-stone-400 font-light mt-1">Un nombre limité de projets menés en parallèle pour vous garantir une attention et une exigence absolues.</p>
                                 </div>
                             </div>
 
                             <div className="flex gap-4 items-start group">
                                 <div className="w-10  h-10 border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/50 flex items-center justify-center shrink-0 group-hover:border-amber-600 dark:group-hover:border-amber-400 transition-colors">
-                                    <Scissors className="w-4 cercle2 h-4 text-stone-800 dark:text-stone-200" />
+                                    <Hammer className="w-4 cercle2 h-4 text-stone-800 dark:text-stone-200" />
                                 </div>
                                 <div className="pt-0.5">
-                                    <h4 className="text-xs font-bold uppercase tracking-wide text-stone-900 dark:text-stone-100">Postes de Tressage Ergonomiques</h4>
-                                    <p className="text-xs text-stone-500 dark:text-stone-400 font-light mt-1">Assises haut de gamme conçues pour éliminer la fatigue posturale lors des prestations de longue durée.</p>
+                                    <h4 className="text-xs font-bold uppercase tracking-wide text-stone-900 dark:text-stone-100">Postes de Travail Équipés</h4>
+                                    <p className="text-xs text-stone-500 dark:text-stone-400 font-light mt-1">Établis et outillage haut de gamme conçus pour garantir précision et sécurité lors des réalisations de longue durée.</p>
                                 </div>
                             </div>
 
@@ -121,8 +121,8 @@ export default function SalonShowcase() {
                                     <Sparkles className="w-4 cercle3 h-4 text-stone-800 dark:text-stone-200" />
                                 </div>
                                 <div className="pt-0.5">
-                                    <h4 className="text-xs font-bold uppercase tracking-wide text-stone-900 dark:text-stone-100">Hygiène Norme Clinique</h4>
-                                    <p className="text-xs text-stone-500 dark:text-stone-400 font-light mt-1">Chaque peigne, outil et miroir subit une stérilisation complète par UV-C entre chaque rendez-vous.</p>
+                                    <h4 className="text-xs font-bold uppercase tracking-wide text-stone-900 dark:text-stone-100">Finitions Norme Premium</h4>
+                                    <p className="text-xs text-stone-500 dark:text-stone-400 font-light mt-1">Chaque pièce est poncée, huilée ou vernie avec un contrôle qualité rigoureux avant livraison.</p>
                                 </div>
                             </div>
 
