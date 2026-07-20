@@ -1,8 +1,7 @@
-// LandingPage.tsx
-import React from 'react';
+
 import { 
   ArrowRight, ShieldAlert, CheckCircle2, Layers, 
-  Paintbrush, Cpu, Check, HelpCircle, PhoneCall 
+  Paintbrush, Cpu, Check, PhoneCall 
 } from 'lucide-react';
 import { 
   HERO_CONTENT, PROBLEMS_DATA, SERVICES_DATA, 
