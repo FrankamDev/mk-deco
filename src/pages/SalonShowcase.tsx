@@ -67,7 +67,7 @@ export default function SalonShowcase() {
                             </div>
                             <div className="text-left">
                                 <p className="text-[9px] tracking-widest uppercase font-light text-stone-400 dark:text-amber-100">Quartier Opéra</p>
-                                <p className="text-xs font-serif font-bold tracking-wide">Yaoundé, Bastos & Odza </p>
+                                <p className="text-xs font-serif font-bold tracking-wide">Douala, Bonamoussadi </p>
                             </div>
                         </motion.div>
                     </div>

@@ -1,7 +1,7 @@
 import  { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
-   Clock, Scissors, CheckCircle2, 
+   Clock, Hammer, CheckCircle2, 
   ArrowRight, Loader2,  User, ShieldCheck 
 } from 'lucide-react';
 import Navbar from '../components/Navbar';
@@ -14,7 +14,7 @@ interface ServiceItem {
   name: string;
   duration: number; // en minutes
   price: number; // en FCFA
-  category: 'coiffure' | 'barbe' | 'soins';
+  category: 'consultation' | 'reparation' | 'finition';
 }
 
 interface TimeSlot {
@@ -24,7 +24,7 @@ interface TimeSlot {
 
 export function BookingSection() {
   const [status, setStatus] = useState<BookingStatus>('idle');
-  const [selectedCategory, setSelectedCategory] = useState<'coiffure' | 'barbe' | 'soins'>('coiffure');
+  const [selectedCategory, setSelectedCategory] = useState<'consultation' | 'reparation' | 'finition'>('consultation');
   const [selectedService, setSelectedService] = useState<string>('c1');
   const [selectedDate, setSelectedDate] = useState<string>('');
   const [selectedTime, setSelectedTime] = useState<string>('');
@@ -33,15 +33,15 @@ export function BookingSection() {
   
   const [clientInfo, setClientInfo] = useState({ name: '', phone: '' });
 
-  // 1. Catalogue de services de ton salon (Mock Data Base de données)
+  // 1. Catalogue de services de ton atelier (Mock Data Base de données)
   const services: ServiceItem[] = [
-    { id: 'c1', name: 'Coupe Signature & Shampoing Ritual', duration: 45, price: 5000, category: 'coiffure' },
-    { id: 'c2', name: 'Coloration Haute Couture / Décoloration', duration: 90, price: 15000, category: 'coiffure' },
-    { id: 'c3', name: 'Lissage Protéine / Traitement Kératine', duration: 120, price: 25000, category: 'coiffure' },
-    { id: 'b1', name: 'Taille de Barbe & Traçage à l\'Ancienne (Vaporisateur)', duration: 30, price: 3000, category: 'barbe' },
-    { id: 'b2', name: 'Rituel Barbe Premium (Huiles chaudes & Massage)', duration: 45, price: 5000, category: 'barbe' },
-    { id: 's1', name: 'Soin du Visage Purifiant & Masque Noir', duration: 40, price: 8000, category: 'soins' },
-    { id: 's2', name: 'Gommage Capillaire Intégral & Massage Crânien', duration: 30, price: 6000, category: 'soins' },
+    { id: 'c1', name: 'Consultation Design & Prise de Mesures', duration: 45, price: 5000, category: 'consultation' },
+    { id: 'c2', name: 'Étude de Faisabilité & Devis Technique', duration: 90, price: 15000, category: 'consultation' },
+    { id: 'c3', name: 'Visite Technique de Chantier', duration: 120, price: 25000, category: 'consultation' },
+    { id: 'b1', name: 'Réparation Express Meuble', duration: 30, price: 3000, category: 'reparation' },
+    { id: 'b2', name: 'Intervention Structure & Finition Premium', duration: 45, price: 5000, category: 'reparation' },
+    { id: 's1', name: 'Ponçage & Vernissage Sur Place', duration: 40, price: 8000, category: 'finition' },
+    { id: 's2', name: 'Entretien Complet du Mobilier Bois', duration: 30, price: 6000, category: 'finition' },
   ];
 
   // 2. Simulation de chargement des créneaux horaires dynamiques quand la date change
@@ -71,7 +71,7 @@ export function BookingSection() {
   const filteredServices = services.filter(s => s.category === selectedCategory);
 
   // Basculer de catégorie réinitialise le service sélectionné par défaut
-  const handleCategoryChange = (cat: 'coiffure' | 'barbe' | 'soins') => {
+  const handleCategoryChange = (cat: 'consultation' | 'reparation' | 'finition') => {
     setSelectedCategory(cat);
     const firstService = services.find(s => s.category === cat);
     if (firstService) setSelectedService(firstService.id);
@@ -97,14 +97,14 @@ export function BookingSection() {
 
     const whatsappNumber = "237690461830";
     
-    // Formatage luxueux pour ton salon de coiffure
+    // Formatage pour ton atelier de menuiserie
     const textMessage = 
 `✨ *NOUVELLE DEMANDE DE RÉSERVATION* ✨
 -----------------------------------------
 👤 *Client :* ${clientInfo.name}
 📞 *Téléphone :* ${clientInfo.phone}
 
-💇‍♂️ *Prestation :* ${activeService.name}
+🪚 *Prestation :* ${activeService.name}
 ⏳ *Durée Estimée :* ${activeService.duration} minutes
 💵 *Tarif :* ${activeService.price.toLocaleString()} FCFA
 
@@ -135,18 +135,18 @@ export function BookingSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-16 items-end">
           <div className="lg:col-span-7 text-center lg:text-left">
             <span className="inline-flex items-center gap-2 px-3 py-1 bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800 text-[10px] font-mono font-bold tracking-widest text-slate-900 dark:text-lime-400 uppercase mb-4">
-              <Scissors className="w-3 h-3 text-lime-500" /> Maison de Beauté Exclusive
+              <Hammer className="w-3 h-3 text-lime-500" /> Atelier de Menuiserie Artisanale
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-sans font-light tracking-tight text-slate-950 dark:text-white leading-none">
               Planifier Votre <br />
               <span className="font-black uppercase tracking-wide bg-gradient-to-r from-blue-950 via-slate-800 to-lime-500 dark:from-white dark:via-blue-400 dark:to-lime-400 bg-clip-text text-transparent">
-                Instant Privé
+                Rendez-vous Atelier
               </span>
             </h2>
           </div>
           <div className="lg:col-span-5 text-center lg:text-right">
             <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-light max-w-sm mx-auto lg:ml-auto leading-relaxed">
-              Sélectionnez vos soins signatures. Notre système synchronise vos préférences pour réserver l'expert styliste idéal.
+              Sélectionnez votre prestation. Notre système synchronise vos préférences pour réserver l'artisan idéal.
             </p>
           </div>
         </div>
@@ -156,7 +156,7 @@ export function BookingSection() {
           
           {/* NAVIGATION GAUCHE : SÉLECTEUR DE CATÉGORIES */}
           <div className="lg:col-span-4 flex flex-row lg:flex-col gap-2 overflow-x-auto scrollbar-none pb-2 lg:pb-0">
-            {(['coiffure', 'barbe', 'soins'] as const).map((cat) => {
+            {(['consultation', 'reparation', 'finition'] as const).map((cat) => {
               const isSelected = selectedCategory === cat;
               return (
                 <button
@@ -170,14 +170,14 @@ export function BookingSection() {
                   }`}
                 >
                   <div className={`w-8 h-8 flex items-center justify-center ${isSelected ? 'text-lime-400' : 'text-slate-400'}`}>
-                    <Scissors className="w-5 h-5" />
+                    <Hammer className="w-5 h-5" />
                   </div>
                   <div>
                     <h4 className="text-xs sm:text-sm font-black uppercase tracking-wider block">
-                      {cat === 'coiffure' ? 'Haute Coiffure' : cat === 'barbe' ? 'Barbière Élite' : 'Soins Visage & Capillaire'}
+                      {cat === 'consultation' ? 'Étude & Devis' : cat === 'reparation' ? 'Réparations Express' : 'Finitions & Entretien'}
                     </h4>
                     <span className="text-[10px] hidden lg:block font-light text-slate-400 dark:text-slate-500 mt-0.5">
-                      {cat === 'coiffure' ? 'Coupes & Colorations' : cat === 'barbe' ? 'Rasage & Traçage' : 'Esthétique masculine'}
+                      {cat === 'consultation' ? 'Mesures & Conception' : cat === 'reparation' ? 'Interventions rapides' : 'Ponçage, vernis, entretien'}
                     </span>
                   </div>
                   {isSelected && (
@@ -202,10 +202,10 @@ export function BookingSection() {
                 >
                   <CheckCircle2 className="w-16 h-16 text-lime-500 mb-4 animate-pulse" />
                   <h3 className="text-xl font-black uppercase tracking-tight text-slate-950 dark:text-white mb-2">
-                    Création du ticket de Soin
+                    Création du ticket de Rendez-vous
                   </h3>
                   <p className="text-xs text-slate-500 dark:text-slate-400 font-light max-w-sm mb-6 leading-relaxed">
-                    Redirection vers l'assistant WhatsApp du salon pour finaliser le blocage horaire avec notre équipe.
+                    Redirection vers l'assistant WhatsApp de l'atelier pour finaliser le blocage horaire avec notre équipe.
                   </p>
                   <button
                     onClick={() => setStatus('idle')}
@@ -240,9 +240,9 @@ export function BookingSection() {
                       </div>
                     </div>
 
-                    {/* CHOIX DU SERVICE DU SOIN */}
+                    {/* CHOIX DU SERVICE */}
                     <div className="space-y-1.5">
-                      <label className="text-[10px] font-black uppercase tracking-widest text-slate-400">Sélection de la Formule</label>
+                      <label className="text-[10px] font-black uppercase tracking-widest text-slate-400">Sélection de la Prestation</label>
                       <select
                         value={selectedService}
                         onChange={(e) => setSelectedService(e.target.value)}
@@ -312,7 +312,7 @@ export function BookingSection() {
                     <div className="p-4 bg-stone-50 dark:bg-slate-950 border border-slate-200/60 dark:border-slate-800 flex justify-between items-center">
                       <div className="text-left">
                         <span className="text-[9px] font-mono text-slate-400 block uppercase tracking-wider">Durée totale bloquée</span>
-                        <span className="text-xs font-bold text-slate-950 dark:text-white">{activeService.duration} min en cabine</span>
+                        <span className="text-xs font-bold text-slate-950 dark:text-white">{activeService.duration} min en atelier</span>
                       </div>
                       <div className="text-right">
                         <span className="text-[9px] font-mono text-slate-400 block uppercase tracking-wider">Total estimé</span>
