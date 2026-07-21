@@ -411,10 +411,10 @@ export default function Footer() {
             </h5>
             <ul className="space-y-2.5 text-stone-500 dark:text-stone-400">
               <li className="flex items-center gap-2 justify-center sm:justify-start">
-                <Phone className="w-3 h-3" /> +237 690 46 18 30
+                <Phone className="w-3 h-3" /> +237 658 62 59 60
               </li>
               <li className="flex items-center gap-2 justify-center sm:justify-start">
-                <Mail className="w-3 h-3" /> contact@ebenia.com
+                <Mail className="w-3 h-3" /> mkdeco.contact@gmail.com
               </li>
             </ul>
           </div>
@@ -425,8 +425,8 @@ export default function Footer() {
               Notre Atelier
             </h5>
             <p className="text-stone-500 dark:text-stone-400 leading-relaxed mb-6">
-              Bastos & Odza
-              <br /> Yaoundé
+              Bonamoussadi
+              <br /> Douala
             </p>
             <div className="flex items-center gap-3">
               <a
@@ -489,7 +489,7 @@ export default function Footer() {
                 transition={{ type: "spring", stiffness: 500, damping: 30 }}
                 animate={{ x: darkMode ? 28 : 0 }}
               >
-                {darkMode ? "🌙" : "☀️"}
+                {/* {darkMode ? "🌙" : "☀️"} */}
               </motion.div>
             </button>
           </div>

@@ -5,7 +5,7 @@ const servicesData = [
             description: "Des découpes géométriques parfaites et un assemblage maîtrisé pour préserver la longévité de votre mobilier.",
             price: "À partir de 5000 FCFA",
             duration: "5 - 10 jours",
-            image: "/women/1.jpg",
+            image: "/mobilier.jpg",
             featured: true 
         },
         {
@@ -14,7 +14,7 @@ const servicesData = [
             description: "Des lignes épurées et des designs sur-mesure, du style minimaliste aux agencements les plus complexes.",
             price: "À partir de 6500",
             duration: "10 - 20 jours",
-            image: "/men/11.jpg",
+            image: "/cuisine.jpg",
             featured: false
         },
         {
@@ -23,7 +23,7 @@ const servicesData = [
             description: "Un volume généreux et une texture naturelle premium pour un extérieur chaleureux et durable.",
             price: "À partir de 10000",
             duration: "7 - 14 jours",
-            image: "/men/11.jpg",
+            image: "/terrasse.jpg",
             featured: false
         },
         {
@@ -32,7 +32,7 @@ const servicesData = [
             description: "Un volume généreux et une texture naturelle premium pour un style chaleureux et sophistiqué.",
             price: "À partir de 6000",
             duration: "7 - 14 jours",
-            image: "/women/f13.jpg",
+            image: "/escalier.jpg",
             featured: true
         },
         {
@@ -41,7 +41,7 @@ const servicesData = [
             description: "Un volume généreux et une texture naturelle premium pour un style chaleureux et sophistiqué.",
             price: "À partir de 6000",
             duration: "7 - 14 jours",
-              image: "/women/f13.jpg",
+              image: "/dressing.jpg",
             featured: false
         },
         {
@@ -50,7 +50,7 @@ const servicesData = [
             description: "Un volume généreux et une texture naturelle premium pour un style chaleureux et sophistiqué.",
             price: "À partir de 9000",
             duration: "7 - 14 jours",
-              image: "/women/f13.jpg",
+              image: "/bi.jpg",
             featured: false
         },
         {
@@ -59,7 +59,7 @@ const servicesData = [
             description: "Un volume généreux et une texture naturelle premium pour un style chaleureux et sophistiqué.",
             price: "À partir de 9000",
             duration: "7 - 14 jours",
-            image: "/men/11.jpg",
+            image: "/porte.jpg",
             featured: false
         },
         {
@@ -68,7 +68,7 @@ const servicesData = [
             description: "Un volume généreux et une texture naturelle premium pour un style chaleureux et sophistiqué.",
             price: "À partir de 9000",
             duration: "7 - 14 jours",
-            image: "/men/11.jpg",
+            image: "/r.jpg",
             featured: false
         },
         {
@@ -77,7 +77,7 @@ const servicesData = [
             description: "Un volume généreux et une texture naturelle premium pour un style chaleureux et sophistiqué.",
             price: "À partir de 9000",
             duration: "7 - 14 jours",
-            image: "/women/f7.jpg",
+            image: "/tablee.jpg",
             featured: false
         },
         {
@@ -86,7 +86,7 @@ const servicesData = [
             description: "Un volume généreux et une texture naturelle premium pour un style chaleureux et sophistiqué.",
             price: "À partir de 4000",
             duration: "7 - 14 jours",
-         image: "/women/f8.jpg",
+         image: "/meuble.jpg",
             featured: true
         },
         {
@@ -95,7 +95,7 @@ const servicesData = [
             description: "Un volume généreux et une texture naturelle premium pour un style chaleureux et sophistiqué.",
             price: "À partir de 2000",
             duration: "7 - 14 jours",
-              image: "/women/f9.jpg",
+              image: "/rr.jpg",
             featured: false
         },
         {
@@ -104,7 +104,7 @@ const servicesData = [
             description: "Un volume généreux et une texture naturelle premium pour un style chaleureux et sophistiqué.",
             price: "À partir de 5000",
             duration: "7 - 14 jours",
-              image: "/women/f14.jpg",
+              image: "/pergola.jpg",
             featured: false
         },
         {
@@ -113,7 +113,7 @@ const servicesData = [
             description: "Un volume généreux et une texture naturelle premium pour un style chaleureux et sophistiqué.",
             price: "À partir de 7000",
             duration: "7 - 14 jours",
-              image: "/women/f13.jpg",
+              image: "/placards.jpg",
             featured: false
         },
     ];

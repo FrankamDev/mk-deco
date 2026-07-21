@@ -19,7 +19,7 @@ export default function FloatingChat() {
   const [hasGreeted, setHasGreeted] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  const phoneNumber = "237690461830";
+  const phoneNumber = "237658625960";
 
   const PERSISTENT_BADGE: boolean = true;
   const [hasUnread, setHasUnread] = useState(true);
@@ -159,7 +159,7 @@ export default function FloatingChat() {
                 <Hammer size={22} />
               </div>
               <div className="flex-1 min-w-0">
-                <p className="font-semibold truncate">Ébénia — Atelier</p>
+                <p className="font-semibold truncate">MK_DECO — Atelier</p>
                 <p className="text-xs opacity-90 flex items-center gap-1.5">
                   <span className="relative flex h-2 w-2">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>

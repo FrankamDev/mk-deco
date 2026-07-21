@@ -33,7 +33,7 @@ export default function SalonShowcase() {
                             className="absolute left-0 top-0 w-[70%] h-[75%] border border-stone-200/60 dark:border-stone-900 overflow-hidden shadow-md"
                         >
                             <img 
-                                src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=600&auto=format&fit=crop" 
+                                src="/atelier.jpg" 
                                 alt="Intérieur de l'atelier Ébénia" 
                                 className="w-full h-full object-cover object-center scale-105 hover:scale-100 transition-transform duration-700"
                             />
@@ -48,7 +48,7 @@ export default function SalonShowcase() {
                             className="absolute right-0 bottom-0 w-[60%] h-[65%] border-4 border-white dark:border-stone-950 overflow-hidden shadow-2xl z-20"
                         >
                             <img 
-                                src="https://images.unsplash.com/photo-1633681926035-ec1ac984418a?q=80&w=600&auto=format&fit=crop" 
+                                src="atelier2.jpg" 
                                 alt="Espace de fabrication et finitions" 
                                 className="w-full h-full object-cover object-center scale-105 hover:scale-100 transition-transform duration-700"
                             />

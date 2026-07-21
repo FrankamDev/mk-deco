@@ -51,24 +51,24 @@ export default function Gallery() {
 
   // ==================== DONNÉES ====================
   const realisations: GalleryImage[] = [
-    { src: "/men/1.jpg", alt: "Table en chêne massif sur mesure", span: "col-span-8 row-span-2" },
-    { src: "/men/2.jpg", alt: "Dressing sur-mesure", span: "col-span-4 row-span-3" },
-    { src: "/men/3.jpg", alt: "Finitions bois naturel", span: "col-span-4 row-span-1" },
-    { src: "/men/4.jpg", alt: "Escalier en bois massif", span: "col-span-4 row-span-2" },
-    { src: "/men/5.jpg", alt: "Détail assemblage bois", span: "col-span-4 row-span-1" },
-    { src: "/men/6.jpg", alt: "Style contemporain chic", span: "col-span-6 row-span-2" },
-    { src: "/men/7.jpg", alt: "Mobilier artisanal", span: "col-span-6 row-span-1" },
-    { src: "/men/8.jpg", alt: "Finition vernis miroir", span: "col-span-4 row-span-2" },
+    { src: "/ta.jpg", alt: "Table en chêne massif sur mesure", span: "col-span-8 row-span-2" },
+    { src: "/dressingg.jpg", alt: "Dressing sur-mesure", span: "col-span-4 row-span-3" },
+    { src: "/finition.jpg", alt: "Finitions bois naturel", span: "col-span-4 row-span-1" },
+    { src: "/escalier.jpg", alt: "Escalier en bois massif", span: "col-span-4 row-span-2" },
+    { src: "/assemblage.jpg", alt: "Détail assemblage bois", span: "col-span-4 row-span-1" },
+    { src: "/planche.jpg", alt: "Style contemporain chic", span: "col-span-6 row-span-2" },
+    { src: "/afrik.jpg", alt: "Mobilier artisanal", span: "col-span-6 row-span-1" },
+    { src: "/mirr.jpg", alt: "Finition vernis miroir", span: "col-span-4 row-span-2" },
   ];
 
   const boutique: GalleryImage[] = [
-    { src: "/perruques/13.jpg", alt: "Planche à découper artisanale", span: "col-span-8 row-span-2", price: "85 000 FCFA" },
-    { src: "/perruques/4.jpg", alt: "Boîte en bois sculpté", span: "col-span-4 row-span-3", price: "65 000 FCFA" },
-    { src: "/perruques/5.jpg", alt: "Étagère murale suspendue", span: "col-span-4 row-span-1", price: "120 000 FCFA" },
-    { src: "/perruques/6.jpg", alt: "Tabouret compact 30 cm", span: "col-span-4 row-span-2", price: "55 000 FCFA" },
-    { src: "/perruques/7.jpg", alt: "Porte-revues bois clipsable", span: "col-span-4 row-span-1", price: "45 000 FCFA" },
-    { src: "/perruques/8.jpg", alt: "Console d'entrée artisanale", span: "col-span-6 row-span-2", price: "150 000 FCFA" },
-    { src: "/perruques/4.jpg", alt: "Cadre bois sur-mesure", span: "col-span-6 row-span-1", price: "90 000 FCFA" },
+    { src: "/meule.jpg", alt: "Planche à découper artisanale", span: "col-span-8 row-span-2", price: "85 000 FCFA" },
+    { src: "/boite.jpg", alt: "Boîte en bois sculpté", span: "col-span-4 row-span-3", price: "65 000 FCFA" },
+    { src: "/et.jpg", alt: "Étagère murale suspendue", span: "col-span-4 row-span-1", price: "120 000 FCFA" },
+    { src: "/tab.jpg", alt: "Tabouret compact 30 cm", span: "col-span-4 row-span-2", price: "55 000 FCFA" },
+    { src: "/clop.jpg", alt: "Porte-revues bois clipsable", span: "col-span-4 row-span-1", price: "45 000 FCFA" },
+    { src: "/console.jpg", alt: "Console d'entrée artisanale", span: "col-span-6 row-span-2", price: "150 000 FCFA" },
+    { src: "/cadre.jpg", alt: "Cadre bois sur-mesure", span: "col-span-6 row-span-1", price: "90 000 FCFA" },
   ];
 
   const currentImages = activeTab === 'realisations' ? realisations : boutique;
