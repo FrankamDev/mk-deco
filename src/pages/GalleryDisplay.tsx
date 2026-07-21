@@ -51,7 +51,7 @@ export default function Gallery() {
 
   // ==================== DONNÉES ====================
   const realisations: GalleryImage[] = [
-    { src: "./ta.jpg", alt: "Table en chêne massif sur mesure", span: "col-span-8 row-span-2" },
+    { src: "/ta.jpg", alt: "Table en chêne massif sur mesure", span: "col-span-8 row-span-2" },
     { src: "/dressingg.jpg", alt: "Dressing sur-mesure", span: "col-span-4 row-span-3" },
     { src: "/finition.jpg", alt: "Finitions bois naturel", span: "col-span-4 row-span-1" },
     { src: "/escalier.jpg", alt: "Escalier en bois massif", span: "col-span-4 row-span-2" },
