@@ -278,7 +278,7 @@ export default function Footer() {
                 L'Atelier
               </span>
               <span className="block text-[11px] tracking-[0.25em] text-amber-600 dark:text-amber-400 font-medium uppercase mt-1">
-                Ébénia
+                MK-DECO
               </span>
             </div>
             <p className="text-sm text-stone-600 dark:text-stone-400 max-w-md leading-relaxed">
@@ -470,7 +470,7 @@ export default function Footer() {
         {/* BAS DE PAGE */}
         <div className="mt-8 flex flex-col sm:flex-row items-center justify-between gap-6">
           <p className="text-[11px] text-stone-400 dark:text-stone-500 tracking-wide font-light text-center sm:text-left">
-            © 2026 Ébénia. Tous droits réservés. Mentions légales — RGPD.
+            © 2026 MK-DECO. Tous droits réservés. Mentions légales — RGPD.
           </p>
 
           {/* Toggle Dark Mode */}

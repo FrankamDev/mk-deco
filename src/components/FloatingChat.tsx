@@ -58,7 +58,7 @@ export default function FloatingChat() {
     if (isOpen && !hasGreeted) {
       setHasGreeted(true);
       pushBotMessage(
-        "Bonjour 👋 Bienvenue chez Ébénia. Je suis l'assistant de l'atelier — dites-moi ce qui vous amène et je vous oriente tout de suite.",
+        "Bonjour 👋 Bienvenue chez MK-DECO. Je suis l'assistant de l'atelier — dites-moi ce qui vous amène et je vous oriente tout de suite.",
         ["Demander un devis", "Voir nos réalisations", "Horaires & Localisation", "Parler à un conseiller"]
       );
     }

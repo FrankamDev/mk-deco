@@ -245,7 +245,7 @@ export default function Contact() {
             day: 'numeric'
         });
 
-        const message = `Bonjour Ébénia, je m'appelle ${name}. Je souhaiterais lancer un projet de ${style} à réaliser ${place}. Je serais disponible le ${formattedDate}, idéalement ${timeSlot}. Vous pouvez me recontacter sur mon ${contactInfo} pour confirmer le créneau.`;
+        const message = `Bonjour MK-DECO, je m'appelle ${name}. Je souhaiterais lancer un projet de ${style} à réaliser ${place}. Je serais disponible le ${formattedDate}, idéalement ${timeSlot}. Vous pouvez me recontacter sur mon ${contactInfo} pour confirmer le créneau.`;
 
         const encodedMessage = encodeURIComponent(message);
         setIsSubmitted(true);
