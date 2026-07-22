@@ -51,14 +51,28 @@ export default function Gallery() {
 
   // ==================== DONNÉES ====================
   const realisations: GalleryImage[] = [
-    { src: "/ta.jpg", alt: "Table en chêne massif sur mesure", span: "col-span-8 row-span-2" },
-    { src: "/dressingg.jpg", alt: "Dressing sur-mesure", span: "col-span-4 row-span-3" },
-    { src: "/finition.jpg", alt: "Finitions bois naturel", span: "col-span-4 row-span-1" },
-    { src: "/escalier.jpg", alt: "Escalier en bois massif", span: "col-span-4 row-span-2" },
-    { src: "/assemblage.jpg", alt: "Détail assemblage bois", span: "col-span-4 row-span-1" },
-    { src: "/planche.jpg", alt: "Style contemporain chic", span: "col-span-6 row-span-2" },
-    { src: "/afrik.jpg", alt: "Mobilier artisanal", span: "col-span-6 row-span-1" },
-    { src: "/mirr.jpg", alt: "Finition vernis miroir", span: "col-span-4 row-span-2" },
+    { src: "/l1.jpg", alt: "Table en chêne massif sur mesure", span: "col-span-8 row-span-2" },
+    { src: "/l2.jpg", alt: "Dressing sur-mesure", span: "col-span-4 row-span-3" },
+    { src: "/l3.jpg", alt: "Finitions bois naturel", span: "col-span-4 row-span-1" },
+    { src: "/l4.jpg", alt: "Escalier en bois massif", span: "col-span-4 row-span-2" },
+    { src: "/l5.jpg", alt: "Détail assemblage bois", span: "col-span-4 row-span-1" },
+    { src: "/l6.jpg", alt: "Style contemporain chic", span: "col-span-6 row-span-2" },
+    { src: "/l7.jpg", alt: "Mobilier artisanal", span: "col-span-6 row-span-1" },
+    { src: "/l28.jpg", alt: "Finition vernis miroir", span: "col-span-4 row-span-2" },
+    { src: "/l9.jpg", alt: "Finition vernis miroir", span: "col-span-4 row-span-2" },
+    { src: "/l10.jpg", alt: "Finition vernis miroir", span: "col-span-4 row-span-2" },
+    { src: "/l11.jpg", alt: "Finition vernis miroir", span: "col-span-4 row-span-2" },
+    { src: "/l12.jpg", alt: "Finition vernis miroir", span: "col-span-4 row-span-2" },
+    { src: "/l13.jpg", alt: "Finition vernis miroir", span: "col-span-4 row-span-2" },
+    { src: "/l14.jpg", alt: "Finition vernis miroir", span: "col-span-4 row-span-2" },
+    { src: "/l15.jpg", alt: "Finition vernis miroir", span: "col-span-4 row-span-2" },
+    { src: "/l16.jpg", alt: "Finition vernis miroir", span: "col-span-4 row-span-2" },
+    { src: "/l17.jpg", alt: "Finition vernis miroir", span: "col-span-4 row-span-2" },
+    { src: "/l18.jpg", alt: "Finition vernis miroir", span: "col-span-4 row-span-2" },
+    { src: "/l19.jpg", alt: "Finition vernis miroir", span: "col-span-4 row-span-2" },
+    { src: "/l20.jpg", alt: "Finition vernis miroir", span: "col-span-4 row-span-2" },
+    { src: "/l21.jpg", alt: "Finition vernis miroir", span: "col-span-4 row-span-2" },
+    { src: "/l22.jpg", alt: "Finition vernis miroir", span: "col-span-4 row-span-2" },
   ];
 
   const boutique: GalleryImage[] = [
