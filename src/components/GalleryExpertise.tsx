@@ -19,7 +19,6 @@
 //     plugins: [lgZoom, lgThumbnail],
 //   };
 
- 
 //   const galleryImages = [
 //     { src: "/dressing.jpg", alt: "Précision de la découpe" },
 //     { src: "/interieur.jpg", alt: "Sciage sur mesure" },
@@ -112,7 +111,6 @@
 //   );
 // }
 
-
 import { motion } from "framer-motion";
 import LightGallery from "lightgallery/react";
 import type { LightGalleryProps } from "lightgallery/react";
@@ -161,24 +159,30 @@ export default function GalleryExpertise() {
   ];
 
   return (
-    <section className="relative min-h-screen py-12 md:py-20 bg-stone-50 dark:bg-stone-950">
+    <section className="relative min-h-screen py-12 md:py-20 bg-stone-50 dark:bg-stone-950 overflow-hidden">
       <Navbar />
 
-      <div className="max-w-screen-2xl mx-auto px-4">
+      <div className="max-w-screen-2xl mx-auto px-3 sm:px-4">
         <div className="text-center mb-12">
-          <span className="text-xs font-semibold tracking-[0.25em] uppercase text-amber-600">Galerie</span>
-          <h2 className="text-4xl md:text-5xl font-serif font-light mt-3">Nos Réalisations</h2>
-          <p className="mt-3 text-stone-600 dark:text-stone-400">Cliquez sur une image pour l’agrandir</p>
+          <span className="text-xs font-semibold tracking-[0.25em] uppercase text-amber-600">
+            Galerie
+          </span>
+          <h2 className="text-4xl md:text-5xl font-serif font-light tracking-tight mt-3 text-stone-950 dark:text-stone-50">
+            Nos Réalisations
+          </h2>
+          <p className="mt-3 text-stone-600 dark:text-stone-400">
+            Cliquez sur les images pour les agrandir
+          </p>
         </div>
 
         <LightGallery {...lightGalleryProps}>
-          <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 xl:columns-5 gap-4 space-y-4">
+          <div className="columns-3 sm:columns-3 md:columns-4 lg:columns-5 xl:columns-6 gap-3 sm:gap-4 space-y-4 pb-20">
             {galleryImages.map((image, index) => (
               <motion.a
                 key={index}
                 href={image.src}
                 data-src={image.src}
-                className="gallery-item block overflow-hidden rounded-3xl group cursor-pointer break-inside-avoid"
+                className="gallery-item relative block overflow-hidden rounded-3xl group cursor-pointer break-inside-avoid"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -189,13 +193,16 @@ export default function GalleryExpertise() {
                   className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
                 />
 
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black/70 opacity-0 group-hover:opacity-100 transition-all" />
+                {/* Overlay Hover */}
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                <div className="absolute top-4 right-4 bg-white/90 dark:bg-stone-900/90 p-3 rounded-2xl opacity-0 group-hover:opacity-100 transition-all">
-                  <ZoomIn className="w-5 h-5" />
+                {/* Zoom Icon */}
+                <div className="absolute top-4 right-4 bg-white/90 dark:bg-stone-900/90 p-3 rounded-2xl backdrop-blur-md opacity-0 group-hover:opacity-100 transition-all scale-75 group-hover:scale-100">
+                  <ZoomIn className="w-5 h-5 text-stone-700 dark:text-amber-400" />
                 </div>
 
-                <div className="absolute bottom-4 left-4 bg-white/90 dark:bg-stone-900/90 px-4 py-2 rounded-xl text-sm font-medium opacity-0 group-hover:opacity-100 transition-all">
+                {/* Légende */}
+                <div className="absolute bottom-4 left-4 right-4 bg-white/90 dark:bg-stone-900/90 backdrop-blur-md px-4 py-2.5 rounded-2xl text-sm opacity-0 group-hover:opacity-100 translate-y-3 group-hover:translate-y-0 transition-all duration-300">
                   {image.alt}
                 </div>
               </motion.a>
