@@ -8,9 +8,10 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-      "deploy": "npm run build && git add . && git commit -m 'deploy' && git push"
+    "deploy": "npm run build && git add . && git commit -m 'deploy' && git push"
   },
   "dependencies": {
+    "@fancyapps/ui": "^6.1.14",
     "@tailwindcss/vite": "^4.3.1",
     "framer-motion": "^12.40.0",
     "lightgallery": "^2.9.0",
