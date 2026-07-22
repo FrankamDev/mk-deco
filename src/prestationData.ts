@@ -107,7 +107,7 @@ const prestationData: Service[] = [
     description: "Traitement au vernis naturel pour lisser et protéger le bois.",
     duration: "1 jour",
     price: "13.000 FCFA",
-    image: "/soin/s3.jpg",
+    image: "/rr.jpg",
     rating: 4.8,
   },
  
@@ -118,7 +118,7 @@ const prestationData: Service[] = [
     description: "Ajustement et entretien d'agencement de cuisine.",
     duration: "1 jour",
     price: "46.000 FCFA",
-    image: "./../public/c2ds.jpg",
+    image: "./c2.jpg",
     rating: 4.6,
   },
   {
@@ -128,7 +128,7 @@ const prestationData: Service[] = [
     description: "Ajustement et entretien d'agencement de cuisine.",
     duration: "1 jour",
     price: "46.000 FCFA",
-    image: "./../public/c1.jpg",
+    image: "./c1.jpg",
     rating: 4.6,
   },
   {
