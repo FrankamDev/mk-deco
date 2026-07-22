@@ -17,7 +17,7 @@ const prestationData: Service[] = [
     description: "Table sur mesure en bois massif, finition soignée et robustesse longue durée.",
     duration: "5 - 7 jours",
     price: "13.000 FCFA",
-    image: "/women/1.jpg",
+    image: "./../public/table tv.jpg",
     popular: true,
     rating: 4.9,
   },
@@ -28,7 +28,7 @@ const prestationData: Service[] = [
     description: "Meuble bas avec rangements et découpes géométriques complexes.",
     duration: "3 - 5 jours",
     price: "5.000 FCFA",
-    image: "/women/f11.jpg",
+    image: "./../public/mobilier.jpg",
     rating: 4.8,
   },
   {
@@ -38,7 +38,7 @@ const prestationData: Service[] = [
     description: "Assises douces et naturelles pour un intérieur élégant et facile d'entretien.",
     duration: "3 - 4 jours",
     price: "7.000 FCFA",
-    image: "/women/f13.jpg",
+    image: "./../public/table tv.jpg",
     rating: 4.7,
   },
   {
@@ -48,7 +48,7 @@ const prestationData: Service[] = [
     description: "Dressing entièrement personnalisé avec matériaux de haute qualité.",
     duration: "8 - 12 jours",
     price: "12.000 FCFA",
-    image: "/women/f12.jpg",
+    image: "./../public/table tv.jpg",
     popular: true,
     rating: 4.9,
   },
@@ -59,7 +59,7 @@ const prestationData: Service[] = [
     description: "Étagères épaisses et volumineuses pour un effet spectaculaire.",
     duration: "3 - 4 jours",
     price: "2.000 FCFA",
-    image: "/women/13.jpg",
+    image: "./../public/table tv.jpg",
     rating: 4.6,
   },
   {
@@ -69,7 +69,7 @@ const prestationData: Service[] = [
     description: "Structure de lit sans fixations visibles pour plus de confort et d'élégance.",
     duration: "5 - 7 jours",
     price: "15.000 FCFA",
-    image: "/women/14.jpg",
+    image: "./../public/mobilier.jpg",
     popular: true,
     rating: 4.9,
   },
@@ -80,7 +80,7 @@ const prestationData: Service[] = [
     description: "Buffet léger et volumineux avec un rendu bohème chic.",
     duration: "4 - 6 jours",
     price: "10.000 FCFA",
-    image: "/women/15.jpg",
+    image: "./../public/table tv.jpg",
     rating: 4.8,
   },
   {
@@ -90,7 +90,7 @@ const prestationData: Service[] = [
     description: "Réalisation sur mesure en bois massif ou matériaux composites.",
     duration: "4 - 6 jours",
     price: "11.000 FCFA",
-    image: "/women/16.jpg",
+    image: "./../public/table tv.jpg",
     rating: 4.7,
   },
   {
@@ -100,7 +100,7 @@ const prestationData: Service[] = [
     description: "Restauration intensive avec traitement et renforcement structurel.",
     duration: "1 - 2 jours",
     price: "9.000 FCFA",
-    image: "/women/17.jpg",
+    image: "./../public/table tv.jpg",
     rating: 4.8,
   },
   {
@@ -110,7 +110,7 @@ const prestationData: Service[] = [
     description: "Pose de verrière décorative sur mesure avec personnalisation.",
     duration: "3 - 4 jours",
     price: "12.000 FCFA",
-    image: "/women/16.jpg",
+    image: "./../public/table tv.jpg",
     popular: true,
     rating: 4.9,
   },
@@ -121,7 +121,7 @@ const prestationData: Service[] = [
     description: "Ajout de surface et volume avec structure en bois traité.",
     duration: "5 - 7 jours",
     price: "170.000 FCFA",
-    image: "/women/9.jpg",
+    image: "./../public/table tv.jpg",
     rating: 4.7,
   },
   {
@@ -131,7 +131,7 @@ const prestationData: Service[] = [
     description: "Étagères mi-hautes élégantes et légères.",
     duration: "4 - 5 jours",
     price: "10.000 FCFA",
-    image: "/women/10.jpg",
+    image: "./../public/table tv.jpg",
     rating: 4.6,
   },
   {
@@ -141,7 +141,7 @@ const prestationData: Service[] = [
     description: "Meubles décorés avec incrustations, marqueterie et accessoires.",
     duration: "4 - 6 jours",
     price: "11.000 FCFA",
-    image: "/women/11.jpg",
+    image: "./../public/table tv.jpg",
     rating: 4.8,
   },
   {
@@ -161,7 +161,7 @@ const prestationData: Service[] = [
     description: "Pose de lambris en bois naturel ou composite.",
     duration: "3 - 5 jours",
     price: "11.000 FCFA",
-    image: "/women/13.jpg",
+    image: "./../public/table tv.jpg",
     rating: 4.6,
   },
   {
@@ -171,7 +171,7 @@ const prestationData: Service[] = [
     description: "Style traditionnel avec motifs authentiques sculptés à la main.",
     duration: "4 - 6 jours",
     price: "15.000 FCFA",
-    image: "/women/14.jpg",
+    image: "./../public/table tv.jpg",
     rating: 4.7,
   },
   {
@@ -181,7 +181,7 @@ const prestationData: Service[] = [
     description: "Teinture professionnelle et assemblage entièrement sur mesure.",
     duration: "5 - 7 jours",
     price: "157.000 FCFA",
-    image: "/women/15.jpg",
+    image: "./../public/table tv.jpg",
     rating: 4.8,
   },
   {
@@ -191,7 +191,7 @@ const prestationData: Service[] = [
     description: "Retouche et réajustement de mobilier existant.",
     duration: "2 - 4 jours",
     price: "59.000 FCFA",
-    image: "/women/16.jpg",
+    image: "./../public/table tv.jpg",
     rating: 4.5,
   },
   {
@@ -201,7 +201,7 @@ const prestationData: Service[] = [
     description: "Mobilier adapté aux enfants avec finitions sécurisées et arrondies.",
     duration: "2 - 3 jours",
     price: "49.000 FCFA",
-    image: "/women/17.jpg",
+    image: "./../public/table tv.jpg",
     rating: 4.9,
   },
   {
@@ -221,7 +221,7 @@ const prestationData: Service[] = [
     description: "Meuble avec cannage et fibres naturelles pour un volume et une texture unique.",
     duration: "4 - 6 jours",
     price: "8.000 FCFA",
-    image: "/women/19.jpg",
+    image: "./../public/table tv.jpg",
     rating: 4.6,
   },
   {
@@ -231,7 +231,7 @@ const prestationData: Service[] = [
     description: "Éléments modulaires amovibles pour un aménagement rapide.",
     duration: "1 - 2 jours",
     price: "9.000 FCFA",
-    image: "/women/20.jpg",
+    image: "./../public/table tv.jpg",
     rating: 4.5,
   },
   {
@@ -241,7 +241,7 @@ const prestationData: Service[] = [
     description: "Plans de travail fins et compacts avec finition soignée.",
     duration: "5 - 7 jours",
     price: "7.000 FCFA",
-    image: "/women/21.jpg",
+    image: "./../public/table tv.jpg",
     rating: 4.7,
   },
   {
@@ -261,7 +261,7 @@ const prestationData: Service[] = [
     description: "Création mixte combinant plusieurs matériaux et techniques.",
     duration: "5 - 6 jours",
     price: "12.000 FCFA",
-    image: "/women/23.jpg",
+    image: "./../public/table tv.jpg",
     rating: 4.8,
   },
   {
@@ -281,7 +281,7 @@ const prestationData: Service[] = [
     description: "Style moderne et structuré pour vos aménagements extérieurs.",
     duration: "4 - 6 jours",
     price: "10.000 FCFA",
-    image: "/women/25.jpg",
+    image: "./../public/table tv.jpg",
     rating: 4.7,
   },
   {
@@ -301,7 +301,7 @@ const prestationData: Service[] = [
     description: "Mobilier compact moderne et sophistiqué pour petits espaces.",
     duration: "3 - 4 jours",
     price: "72.000 FCFA",
-    image: "/women/1.jpg",
+    image: "./../public/table tv.jpg",
     rating: 4.5,
   },
   {

@@ -45,9 +45,9 @@ export default function Services() {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-6 py-3 text-sm font-medium rounded-full transition-all duration-300 ${
+              className={`px-6 py-3 text-sm font-medium text-white rounded-full transition-all duration-300 ${
                 activeCategory === cat 
-                  ? 'bg-stone-950 text-white dark:bg-amber-600 shadow-lg' 
+                  ? 'bg-stone-950 text-white  dark:bg-amber-600 shadow-lg' 
                   : 'bg-stone-100 dark:bg-stone-900 hover:bg-stone-200 dark:hover:bg-stone-800'
               }`}
             >
